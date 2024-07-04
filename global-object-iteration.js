@@ -20,17 +20,6 @@ const pathToString = (/** @type {(string | symbol)[]} */ path, /** @type {boolea
 	return string;
 };
 
-const allKeys = (/** @type {any} */ object) => {
-	let set = new Set([
-		...Object.getOwnPropertyNames(object),
-		...Object.getOwnPropertySymbols(object),
-		...Object.entries(Object.getOwnPropertyDescriptors(object)).map(([key]) => key),
-		...Reflect.ownKeys(object),
-	]);
-	for (const key in object) set.add(key);
-	return sort([...set]);
-};
-
 const recursiveAdd = (/** @type {any} */ object, /** @type {any} */ path = [], /** @type {boolean} */ indent = false) => {
 	let /** @type {string[]} */ list = [];
 	if (path.length > 9) {
