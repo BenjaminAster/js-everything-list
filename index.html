@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content" />
+	<meta name="robots" content="all" />
+	<meta name="author" content="Benjamin Aster" />
+	<meta name="description" content="DESCRIPTION" />
+	<!-- <link rel="code-repository" href="https://github.com/BenjaminAster/REPOSITORY" /> -->
+	<!-- <meta property="og:image" content="https://benjaminaster.com/NAME/assets/icon.png" /> -->
+
+	<!-- <link rel="icon" href="./assets/icon.svg" type="image/svg+xml" sizes="any" /> -->
+	<!-- <link rel="icon" href="./assets/icon.png" type="image/png" sizes="512x512" /> -->
+	<!-- <link rel="manifest" href="./app.webmanifest" /> -->
+
+	<title>JS everything list</title>
+
+	<!-- <link rel="stylesheet" href="./main.css" /> -->
+	
+	<script type="module" src="./main.js"></script>
+	<link rel="modulepreload" href="./global-object-iteration.js" />
+
+	<style>
+		:root {
+			color-scheme: dark light;
+			font-family: system-ui, sans-serif;
+			line-height: 1.5;
+			overflow-wrap: break-word;
+			-webkit-text-size-adjust: none;
+			text-size-adjust: none;
+			-webkit-tap-highlight-color: transparent;
+		}
+
+		body {
+			box-sizing: border-box;
+			min-block-size: 100dvb;
+			margin: 0;
+			padding: .5rem;
+		}
+
+		ol {
+			padding-inline-start: 4rem;
+		}
+
+		li {
+			font-family: monospace;
+			white-space-collapse: preserve;
+			tab-size: 3;
+			
+			&::marker {
+				color: color-mix(in srgb, CanvasText, Canvas 30%);
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<noscript>
+		Please enable JavaScript to view this site.
+		<hr />
+	</noscript>
+
+	<main>
+		<label>
+			Execution context:
+			<select id="context-select">
+				<option value="main-thread">Main Thread</option>
+				<option value="dedicated-worker">Dedicated Worker</option>
+				<option value="shared-worker">Shared Worker</option>
+				<option value="service-worker">Service Worker</option>
+			</select>
+			&bull;
+			<button id="copy-all">Copy all</button>
+		</label>
+
+		<ol id="main"></ol>
+	</main>
+</body>
+
+</html>
