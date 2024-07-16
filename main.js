@@ -19,35 +19,52 @@
 
 import iteration from "./global-object-iteration.js";
 
-// // Audio Worklet
-// if (window.AudioWorklet && window.OfflineAudioContext) {
-// 	new OfflineAudioContext({ length: 1, sampleRate: 10_000 }).audioWorklet.addModule(import.meta.resolve("./audio-worklet.js"));
-// }
-
 let /** @type {Worker} */ dedicatedWorker;
 let /** @type {SharedWorker} */ sharedWorker;
 let /** @type {ServiceWorker} */ serviceWorker;
 
-// console.log(Object.entries(import.meta))
-
 const OL = document.querySelector("ol#main");
 const contextSelect = document.querySelector("select#context-select");
-const copyAllButton = document.querySelector("button#copy-all");
+const copyAllButton = document.querySelector("button#copy");
+const downloadButton = document.querySelector("button#download");
 
 window.addEventListener("error", (event) => {
 	const error = [event.message, ...(event.error.stack.split("\n").slice(event.error.stack.startsWith("@") ? 0 : 1))].join("\n");
 	window.alert(error);
 });
 
-// alert(1)
+const browserName = await (async () => {
+	if (navigator.userAgentData?.brands?.some(({ brand }) => brand === "Chromium")) {
+		if (window.__gg__ && window.gmaSdk) return "Google Go";
+		if (window.DataTransfer?.prototype?.SetURLAndTitle) return "Vivaldi";
+		if (await window.ImageDecoder?.isTypeSupported?.("image/jxl")) return "Thorium";
+		let name = navigator.userAgentData.brands.find(({ brand }) => !/(Chromium)|(\W*Not\W*A\W*Brand\W*)/i.test(brand))?.brand;
+		if (name) return name;
+	}
+	{
+		const name = navigator.userAgent.split("/").at(-2).split(" ").at(-1);
+		if (name) return name;
+	}
+	return "unknown";
+})();
+
+let /** @type {string[]} */ list = [];
 
 copyAllButton.addEventListener("click", async () => {
-	await navigator.clipboard.writeText((await iteration({ indent: true })).join("\n"));
+	await navigator.clipboard.writeText(list.join("\n"));
+});
+
+downloadButton.addEventListener("click", async () => {
+	const blob = new Blob([list.join("\n")], { type: "text/plain;charset=utf-8" });
+	const url = URL.createObjectURL(blob);
+	const a = document.createElement("a");
+	a.href = url;
+	a.download = `${browserName.toLowerCase().replace(" ", "-")}-${contextSelect.value}.txt`;
+	a.click();
 });
 
 {
 	const update = async () => {
-		let /** @type {string[]} */ list = [];
 		switch (contextSelect.value) {
 			case "main-thread": {
 				// alert(2)
