@@ -20,6 +20,8 @@
 	
 	<script type="module" src="./main.js"></script>
 	<link rel="modulepreload" href="./global-object-iteration.js" />
+	<link rel="preload" as="fetch" crossorigin href="./in-specifications.json" />
+	<link rel="preload" as="fetch" crossorigin href="./ecmascript-globals.txt" />
 
 	<style>
 		:root {
@@ -75,6 +77,11 @@
 		<button id="copy">Copy all</button>
 		&bull;
 		<button id="download">Download text file</button>
+		&bull;
+		<label>
+			Show only non-standard features:
+			<input type="checkbox" id="exclude-standardized" />
+		</label>
 
 		<ol id="main"></ol>
 	</main>

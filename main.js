@@ -3,6 +3,7 @@
 	Object.groupBy ??= function (array, callback) {
 		let /** @type {any} */ obj = {};
 		let item;
+		// @ts-ignore
 		for (let i = 0; i < array.length; ++i) {
 			item = array[i];
 			(obj[callback(item, i)] ??= []).push(item);
@@ -17,11 +18,13 @@
 	};
 }
 
-import iteration from "./global-object-iteration.js";
+import iteration, { init } from "./global-object-iteration.js";
 
 let /** @type {Worker} */ dedicatedWorker;
 let /** @type {SharedWorker} */ sharedWorker;
 let /** @type {ServiceWorker} */ serviceWorker;
+
+let excludeStandardized = false;
 
 const OL = document.querySelector("ol#main");
 const contextSelect = document.querySelector("select#context-select");
@@ -45,7 +48,7 @@ const browserName = await (async () => {
 		const name = navigator.userAgent.split("/").at(-2).split(" ").at(-1);
 		if (name) return name;
 	}
-	return "unknown";
+	return "unknown-browser";
 })();
 
 let /** @type {string[]} */ list = [];
@@ -63,76 +66,81 @@ downloadButton.addEventListener("click", async () => {
 	a.click();
 });
 
-{
-	const update = async () => {
-		switch (contextSelect.value) {
-			case "main-thread": {
-				// alert(2)
-				console.time("global object iteration");
-				list = await iteration({ indent: true });
-				console.timeEnd("global object iteration");
-				// alert(3)
-				break;
-			}
-			case "dedicated-worker": {
-				if (!dedicatedWorker) {
-					dedicatedWorker = new Worker(import.meta.resolve("./global-object-iteration.js"), { type: "module" });
-				}
-				const { promise, resolve } = Promise.withResolvers();
-				const listener = ({ data }) => {
-					if (data.command !== "response:list") return;
-					resolve(data.list);
-					dedicatedWorker.removeEventListener("message", listener);
-				}
-				dedicatedWorker.addEventListener("message", listener);
-				dedicatedWorker.postMessage({ command: "request:list" });
-				list = await promise;
-				break
-			} case "shared-worker": {
-				if (!sharedWorker) {
-					sharedWorker = new SharedWorker(import.meta.resolve("./global-object-iteration.js"), { type: "module" });
-					sharedWorker.port.start();
-				}
-				const { promise, resolve } = Promise.withResolvers();
-				const listener = ({ data }) => {
-					if (data.command !== "response:list") return;
-					resolve(data.list);
-					sharedWorker.port.removeEventListener("message", listener);
-				}
-				sharedWorker.port.addEventListener("message", listener);
-				sharedWorker.port.postMessage({ command: "request:list" });
-				list = await promise;
-				break
-			} case "service-worker": {
-				if (!serviceWorker) {
-					navigator.serviceWorker.register(import.meta.resolve("./global-object-iteration.js"), { type: "module", scope: location.href, updateViaCache: "none" });
-					serviceWorker = (await navigator.serviceWorker.ready).active;
-				}
-				const { promise, resolve } = Promise.withResolvers();
-				const listener = ({ data }) => {
-					if (data.command !== "response:list") return;
-					resolve(data.list);
-					navigator.serviceWorker.removeEventListener("message", listener);
-				}
-				navigator.serviceWorker.addEventListener("message", listener);
-				serviceWorker.postMessage({ command: "request:list" });
-				list = await promise;
-				break;
-			}
+const update = async () => {
+	switch (contextSelect.value) {
+		case "main-thread": {
+			// alert(2)
+			console.time("global object iteration");
+			list = await iteration({ excludeStandardized });
+			console.timeEnd("global object iteration");
+			// alert(3)
+			break;
 		}
-		// alert(4)
-		OL.innerHTML = "";
-		// OL.textContent = JSON.stringify(list, null, "\t");
-		// alert(5)
-		for (const string of list) {
-			const LI = document.createElement("li");
-			LI.textContent = string;
-			OL.append(LI);
+		case "dedicated-worker": {
+			if (!dedicatedWorker) {
+				dedicatedWorker = new Worker(import.meta.resolve("./global-object-iteration.js"), { type: "module" });
+			}
+			const { promise, resolve } = Promise.withResolvers();
+			const listener = ({ data }) => {
+				if (data.command !== "response:list") return;
+				resolve(data.list);
+				dedicatedWorker.removeEventListener("message", listener);
+			};
+			dedicatedWorker.addEventListener("message", listener);
+			dedicatedWorker.postMessage({ command: "request:list" });
+			list = await promise;
+			break;
+		} case "shared-worker": {
+			if (!sharedWorker) {
+				sharedWorker = new SharedWorker(import.meta.resolve("./global-object-iteration.js"), { type: "module" });
+				sharedWorker.port.start();
+			}
+			const { promise, resolve } = Promise.withResolvers();
+			const listener = ({ data }) => {
+				if (data.command !== "response:list") return;
+				resolve(data.list);
+				sharedWorker.port.removeEventListener("message", listener);
+			};
+			sharedWorker.port.addEventListener("message", listener);
+			sharedWorker.port.postMessage({ command: "request:list" });
+			list = await promise;
+			break;
+		} case "service-worker": {
+			if (!serviceWorker) {
+				navigator.serviceWorker.register(import.meta.resolve("./global-object-iteration.js"), { type: "module", scope: location.href, updateViaCache: "none" });
+				serviceWorker = (await navigator.serviceWorker.ready).active;
+			}
+			const { promise, resolve } = Promise.withResolvers();
+			const listener = ({ data }) => {
+				if (data.command !== "response:list") return;
+				resolve(data.list);
+				navigator.serviceWorker.removeEventListener("message", listener);
+			};
+			navigator.serviceWorker.addEventListener("message", listener);
+			serviceWorker.postMessage({ command: "request:list" });
+			list = await promise;
+			break;
 		}
 	}
+	// alert(4)
+	OL.innerHTML = "";
+	// OL.textContent = JSON.stringify(list, null, "\t");
+	// alert(5)
+	for (const string of list) {
+		const LI = document.createElement("li");
+		LI.textContent = string;
+		OL.append(LI);
+	}
+};
 
-	contextSelect.addEventListener("change", update);
+await init({ readFileFunction: async (url) => await (await self.fetch(url)).text() });
+
+contextSelect.addEventListener("change", update);
+update();
+
+document.querySelector("input#exclude-standardized").addEventListener("change", function () {
+	excludeStandardized = this.checked;
 	update();
-}
+});
 
 export { };

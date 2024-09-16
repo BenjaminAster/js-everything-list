@@ -8,8 +8,8 @@ const noop = () => { };
 
 const toString = (/** @type {string | symbol} */ value) => typeof value === "symbol" ? value.description : value;
 
-const pathToString = (/** @type {(string | symbol)[]} */ path, /** @type {boolean} */ indent = false) => {
-	let string = (indent ? "\t".repeat(path.length - 1) : "") + toString(path[0]);
+const pathToString = (/** @type {(string | symbol)[]} */ path) => {
+	let string = "\t".repeat(path.length - 1) + toString(path[0]);
 	for (const key of path.slice(1)) {
 		string += typeof key === "string"
 			? `.${key}`
@@ -20,7 +20,23 @@ const pathToString = (/** @type {(string | symbol)[]} */ path, /** @type {boolea
 	return string;
 };
 
-const recursiveAdd = (/** @type {any} */ object, /** @type {any} */ path = [], /** @type {boolean} */ indent = false) => {
+let /** @type {Set<string>} */ inSpecifications;
+
+let /** @type {Set<string>} */ inECMAScript;
+
+export const init = async ({ readFileFunction }) => {
+	inSpecifications = new Set(
+		JSON.parse(await readFileFunction(import.meta.resolve("./in-specifications.json"))).map(
+			item => "\t".repeat(item.length - 1) + item.join(".")
+		)
+	);
+
+	inECMAScript = new Set((await readFileFunction(import.meta.resolve("./ecmascript-globals.txt"))).split("\n"));
+};
+
+// console.log([...inSpecifications].join("\n"));
+
+const recursiveAdd = (/** @type {any} */ object, /** @type {any} */ path = [], excludeStandardized = false) => {
 	let /** @type {string[]} */ list = [];
 	if (path.length > 9) {
 		console.log("path > 9", object, path);
@@ -40,11 +56,16 @@ const recursiveAdd = (/** @type {any} */ object, /** @type {any} */ path = [], /
 		) {
 			continue $loop;
 		}
-		let stringified = pathToString([...path, key], indent);
+		let stringified = pathToString([...path, key]);
+		// if (inSpecifications.has(stringified)) continue $loop;
 		let item;
 		$outer: {
 			$inner: {
-				if (key === Symbol.species || (typeof key === "symbol" && key.description === "owner_symbol") || (object === Function.prototype && key === "constructor")) break $inner;
+				if (
+					key === Symbol.species
+					|| (typeof key === "symbol" && key.description === "owner_symbol")
+					|| (object === Function.prototype && key === "constructor")
+				) break $inner;
 				try {
 					item = object[key];
 					if (typeof item === "function" && !item?.prototype && key !== "prototype") stringified += "()";
@@ -54,28 +75,36 @@ const recursiveAdd = (/** @type {any} */ object, /** @type {any} */ path = [], /
 				break $outer;
 			}
 
-			list.push(stringified);
+			if (!excludeStandardized || !inSpecifications.has(stringified)) list.push(stringified);
 			continue $loop;
 		}
-		list.push(stringified)
+		// console.log(item, typeof item);
+		if (!excludeStandardized || (!inSpecifications.has(stringified) && typeof key !== "symbol")) list.push(stringified);
 		try {
 			if (typeof item === "object" && item instanceof Promise) item.catch(noop);
 		} catch { }
 		if (((typeof item === "object" && item !== null) || typeof item === "function") && item !== globalThis) {
-			list.push(...recursiveAdd(item, [...path, key], indent));
+			list.push(...recursiveAdd(item, [...path, key], excludeStandardized));
 		}
 	}
 	return list;
 };
 
-const getList = async ({ indent = false } = {}) => {
+const getList = async ({ excludeStandardized = false } = {}) => {
 	let /** @type {string[]} */ list = [];
-	for (const key of sort(Reflect.ownKeys(globalThis))) {
+	for (let name of sort(Object.getOwnPropertyNames(globalThis))) {
 		// document.body.innerHTML += pathToString([key]) + "<br>"
-		let item = globalThis[key];
-		let stringified = pathToString([key], false);
+
+		if (excludeStandardized && inECMAScript.has(name)) continue;
+
+		let item = globalThis[name];
+		let stringified = name;
+
+		// let stringified = pathToString([key]);
 		if (typeof item === "function") {
 			if (item?.prototype) {
+				// if (inSpecifications.has(key)) continue;
+				// console.log(key);
 				// let temp = item?.prototype
 				let temp = item;
 				let /** @type {string[]} */ inheritanceArray = [];
@@ -87,20 +116,25 @@ const getList = async ({ indent = false } = {}) => {
 				}
 				if (inheritanceArray.length) stringified += ` /* extends ${inheritanceArray.join(" -> ")} */`;
 			} else {
-				stringified += "()";
+				stringified = (name += "()");
+				// if (inSpecifications.has(key)) continue;
+				// console.log(key);
 			}
+		} else {
+			// if (inSpecifications.has(key)) continue;
+			// console.log(key);
 		}
-		list.push(stringified);
+		if (!excludeStandardized || !inSpecifications.has(name)) list.push(stringified);
 		$: if (((typeof item === "object" && item !== null) || typeof item === "function") && item !== globalThis) {
 			if (typeof item === "object") {
 				const prototype = Object.getPrototypeOf(item);
 				const prototypeName = prototype?.[Symbol.toStringTag];
-				if (prototypeName && prototypeName !== key && (prototypeName in globalThis)) {
+				if (prototypeName && prototypeName !== name && (prototypeName in globalThis)) {
 					break $;
 				}
 			}
 
-			list.push(...recursiveAdd(item, [key], indent));
+			list.push(...recursiveAdd(item, [name], excludeStandardized));
 		}
 		if (globalThis.window?.document?.documentElement && globalThis.Window) { // executing in main thread
 			await new Promise(globalThis.queueMicrotask);
@@ -112,7 +146,7 @@ const getList = async ({ indent = false } = {}) => {
 export default getList;
 
 const send = async (/** @type {Function} */ postMessageFunc) => {
-	postMessageFunc({ command: "response:list", list: await getList({ indent: true }) });
+	postMessageFunc({ command: "response:list", list: await getList() });
 };
 
 if (globalThis.SharedWorkerGlobalScope) {
@@ -127,6 +161,3 @@ if (globalThis.SharedWorkerGlobalScope) {
 		send(globalThis.postMessage?.bind(globalThis) ?? source.postMessage.bind(source));
 	});
 }
-
-
-
