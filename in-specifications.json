@@ -41,10 +41,6 @@
 	],
 	[
 		"AbortSignal",
-		"prototype"
-	],
-	[
-		"AbortSignal",
 		"timeout()"
 	],
 	[
@@ -54,6 +50,10 @@
 	[
 		"AbortSignal",
 		"abort()"
+	],
+	[
+		"AbortSignal",
+		"prototype"
 	],
 	[
 		"AbsoluteOrientationSensor"
@@ -205,11 +205,11 @@
 	],
 	[
 		"ANGLE_instanced_arrays",
-		"prototype"
+		"VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE"
 	],
 	[
 		"ANGLE_instanced_arrays",
-		"VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE"
+		"prototype"
 	],
 	[
 		"Animation"
@@ -790,11 +790,11 @@
 	],
 	[
 		"AudioDecoder",
-		"prototype"
+		"isConfigSupported()"
 	],
 	[
 		"AudioDecoder",
-		"isConfigSupported()"
+		"prototype"
 	],
 	[
 		"AudioDestinationNode"
@@ -853,11 +853,11 @@
 	],
 	[
 		"AudioEncoder",
-		"prototype"
+		"isConfigSupported()"
 	],
 	[
 		"AudioEncoder",
-		"isConfigSupported()"
+		"prototype"
 	],
 	[
 		"AudioListener"
@@ -1037,6 +1037,41 @@
 	],
 	[
 		"AudioParamMap"
+	],
+	[
+		"AudioParamMap",
+		"prototype",
+		"values()"
+	],
+	[
+		"AudioParamMap",
+		"prototype",
+		"size"
+	],
+	[
+		"AudioParamMap",
+		"prototype",
+		"keys()"
+	],
+	[
+		"AudioParamMap",
+		"prototype",
+		"has()"
+	],
+	[
+		"AudioParamMap",
+		"prototype",
+		"get()"
+	],
+	[
+		"AudioParamMap",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"AudioParamMap",
+		"prototype",
+		"entries()"
 	],
 	[
 		"AudioParamMap",
@@ -1233,6 +1268,11 @@
 		"AudioTrackList",
 		"prototype",
 		"getTrackById()"
+	],
+	[
+		"AudioTrackList",
+		"prototype",
+		"()"
 	],
 	[
 		"AudioTrackList",
@@ -1527,11 +1567,11 @@
 	],
 	[
 		"BarcodeDetector",
-		"prototype"
+		"getSupportedFormats()"
 	],
 	[
 		"BarcodeDetector",
-		"getSupportedFormats()"
+		"prototype"
 	],
 	[
 		"BarProp"
@@ -2214,10 +2254,80 @@
 	],
 	[
 		"BluetoothManufacturerDataFilter",
+		"prototype",
+		"values()"
+	],
+	[
+		"BluetoothManufacturerDataFilter",
+		"prototype",
+		"size"
+	],
+	[
+		"BluetoothManufacturerDataFilter",
+		"prototype",
+		"keys()"
+	],
+	[
+		"BluetoothManufacturerDataFilter",
+		"prototype",
+		"has()"
+	],
+	[
+		"BluetoothManufacturerDataFilter",
+		"prototype",
+		"get()"
+	],
+	[
+		"BluetoothManufacturerDataFilter",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"BluetoothManufacturerDataFilter",
+		"prototype",
+		"entries()"
+	],
+	[
+		"BluetoothManufacturerDataFilter",
 		"prototype"
 	],
 	[
 		"BluetoothManufacturerDataMap"
+	],
+	[
+		"BluetoothManufacturerDataMap",
+		"prototype",
+		"values()"
+	],
+	[
+		"BluetoothManufacturerDataMap",
+		"prototype",
+		"size"
+	],
+	[
+		"BluetoothManufacturerDataMap",
+		"prototype",
+		"keys()"
+	],
+	[
+		"BluetoothManufacturerDataMap",
+		"prototype",
+		"has()"
+	],
+	[
+		"BluetoothManufacturerDataMap",
+		"prototype",
+		"get()"
+	],
+	[
+		"BluetoothManufacturerDataMap",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"BluetoothManufacturerDataMap",
+		"prototype",
+		"entries()"
 	],
 	[
 		"BluetoothManufacturerDataMap",
@@ -2443,6 +2553,41 @@
 	],
 	[
 		"BluetoothServiceDataFilter",
+		"prototype",
+		"values()"
+	],
+	[
+		"BluetoothServiceDataFilter",
+		"prototype",
+		"size"
+	],
+	[
+		"BluetoothServiceDataFilter",
+		"prototype",
+		"keys()"
+	],
+	[
+		"BluetoothServiceDataFilter",
+		"prototype",
+		"has()"
+	],
+	[
+		"BluetoothServiceDataFilter",
+		"prototype",
+		"get()"
+	],
+	[
+		"BluetoothServiceDataFilter",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"BluetoothServiceDataFilter",
+		"prototype",
+		"entries()"
+	],
+	[
+		"BluetoothServiceDataFilter",
 		"prototype"
 	],
 	[
@@ -2450,14 +2595,45 @@
 	],
 	[
 		"BluetoothServiceDataMap",
+		"prototype",
+		"values()"
+	],
+	[
+		"BluetoothServiceDataMap",
+		"prototype",
+		"size"
+	],
+	[
+		"BluetoothServiceDataMap",
+		"prototype",
+		"keys()"
+	],
+	[
+		"BluetoothServiceDataMap",
+		"prototype",
+		"has()"
+	],
+	[
+		"BluetoothServiceDataMap",
+		"prototype",
+		"get()"
+	],
+	[
+		"BluetoothServiceDataMap",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"BluetoothServiceDataMap",
+		"prototype",
+		"entries()"
+	],
+	[
+		"BluetoothServiceDataMap",
 		"prototype"
 	],
 	[
 		"BluetoothUUID"
-	],
-	[
-		"BluetoothUUID",
-		"prototype"
 	],
 	[
 		"BluetoothUUID",
@@ -2474,6 +2650,10 @@
 	[
 		"BluetoothUUID",
 		"canonicalUUID()"
+	],
+	[
+		"BluetoothUUID",
+		"prototype"
 	],
 	[
 		"BreakToken"
@@ -3414,11 +3594,11 @@
 	],
 	[
 		"ClipboardItem",
-		"prototype"
+		"supports()"
 	],
 	[
 		"ClipboardItem",
-		"supports()"
+		"prototype"
 	],
 	[
 		"CloseEvent"
@@ -3476,6 +3656,11 @@
 	],
 	[
 		"Color"
+	],
+	[
+		"Color",
+		"prototype",
+		"toString()"
 	],
 	[
 		"Color",
@@ -3556,10 +3741,6 @@
 	],
 	[
 		"ColorSpace",
-		"prototype"
-	],
-	[
-		"ColorSpace",
 		"register()"
 	],
 	[
@@ -3579,6 +3760,10 @@
 		"create()"
 	],
 	[
+		"ColorSpace",
+		"prototype"
+	],
+	[
 		"ColorSpaceWhitePoint"
 	],
 	[
@@ -3593,15 +3778,15 @@
 	],
 	[
 		"ColorSpaceWhitePoint",
-		"prototype"
-	],
-	[
-		"ColorSpaceWhitePoint",
 		"D65"
 	],
 	[
 		"ColorSpaceWhitePoint",
 		"D50"
+	],
+	[
+		"ColorSpaceWhitePoint",
+		"prototype"
 	],
 	[
 		"Comment"
@@ -4164,10 +4349,6 @@
 	],
 	[
 		"COWL",
-		"prototype"
-	],
-	[
-		"COWL",
 		"privilege"
 	],
 	[
@@ -4177,6 +4358,10 @@
 	[
 		"COWL",
 		"confidentiality"
+	],
+	[
+		"COWL",
+		"prototype"
 	],
 	[
 		"CrashReportBody"
@@ -4215,15 +4400,15 @@
 	],
 	[
 		"Credential",
-		"prototype"
-	],
-	[
-		"Credential",
 		"willRequestConditionalCreation()"
 	],
 	[
 		"Credential",
 		"isConditionalMediationAvailable()"
+	],
+	[
+		"Credential",
+		"prototype"
 	],
 	[
 		"CredentialsContainer"
@@ -4257,11 +4442,11 @@
 	],
 	[
 		"CropTarget",
-		"prototype"
+		"fromElement()"
 	],
 	[
 		"CropTarget",
-		"fromElement()"
+		"prototype"
 	],
 	[
 		"Crypto"
@@ -4764,11 +4949,11 @@
 	],
 	[
 		"CSSColorValue",
-		"prototype"
+		"parse()"
 	],
 	[
 		"CSSColorValue",
-		"parse()"
+		"prototype"
 	],
 	[
 		"CSSConditionRule"
@@ -5031,7 +5216,52 @@
 	[
 		"CSSFontFeatureValuesMap",
 		"prototype",
+		"values()"
+	],
+	[
+		"CSSFontFeatureValuesMap",
+		"prototype",
+		"size"
+	],
+	[
+		"CSSFontFeatureValuesMap",
+		"prototype",
 		"set()"
+	],
+	[
+		"CSSFontFeatureValuesMap",
+		"prototype",
+		"keys()"
+	],
+	[
+		"CSSFontFeatureValuesMap",
+		"prototype",
+		"has()"
+	],
+	[
+		"CSSFontFeatureValuesMap",
+		"prototype",
+		"get()"
+	],
+	[
+		"CSSFontFeatureValuesMap",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"CSSFontFeatureValuesMap",
+		"prototype",
+		"entries()"
+	],
+	[
+		"CSSFontFeatureValuesMap",
+		"prototype",
+		"delete()"
+	],
+	[
+		"CSSFontFeatureValuesMap",
+		"prototype",
+		"clear()"
 	],
 	[
 		"CSSFontFeatureValuesMap",
@@ -5282,6 +5512,11 @@
 		"CSSKeyframesRule",
 		"prototype",
 		"appendRule()"
+	],
+	[
+		"CSSKeyframesRule",
+		"prototype",
+		"()"
 	],
 	[
 		"CSSKeyframesRule",
@@ -5564,7 +5799,32 @@
 	[
 		"CSSNumericArray",
 		"prototype",
+		"values()"
+	],
+	[
+		"CSSNumericArray",
+		"prototype",
 		"length"
+	],
+	[
+		"CSSNumericArray",
+		"prototype",
+		"keys()"
+	],
+	[
+		"CSSNumericArray",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"CSSNumericArray",
+		"prototype",
+		"entries()"
+	],
+	[
+		"CSSNumericArray",
+		"prototype",
+		"()"
 	],
 	[
 		"CSSNumericArray",
@@ -5625,11 +5885,11 @@
 	],
 	[
 		"CSSNumericValue",
-		"prototype"
+		"parse()"
 	],
 	[
 		"CSSNumericValue",
-		"parse()"
+		"prototype"
 	],
 	[
 		"CSSOKLab"
@@ -5785,6 +6045,11 @@
 	[
 		"CSSParserAtRule",
 		"prototype",
+		"toString()"
+	],
+	[
+		"CSSParserAtRule",
+		"prototype",
 		"prelude"
 	],
 	[
@@ -5807,6 +6072,11 @@
 	[
 		"CSSParserBlock",
 		"prototype",
+		"toString()"
+	],
+	[
+		"CSSParserBlock",
+		"prototype",
 		"name"
 	],
 	[
@@ -5820,6 +6090,11 @@
 	],
 	[
 		"CSSParserDeclaration"
+	],
+	[
+		"CSSParserDeclaration",
+		"prototype",
+		"toString()"
 	],
 	[
 		"CSSParserDeclaration",
@@ -5841,6 +6116,11 @@
 	[
 		"CSSParserFunction",
 		"prototype",
+		"toString()"
+	],
+	[
+		"CSSParserFunction",
+		"prototype",
 		"name"
 	],
 	[
@@ -5854,6 +6134,11 @@
 	],
 	[
 		"CSSParserQualifiedRule"
+	],
+	[
+		"CSSParserQualifiedRule",
+		"prototype",
+		"toString()"
 	],
 	[
 		"CSSParserQualifiedRule",
@@ -6487,10 +6772,6 @@
 	],
 	[
 		"CSSRule",
-		"prototype"
-	],
-	[
-		"CSSRule",
 		"SUPPORTS_RULE"
 	],
 	[
@@ -6540,6 +6821,10 @@
 	[
 		"CSSRule",
 		"CHARSET_RULE"
+	],
+	[
+		"CSSRule",
+		"prototype"
 	],
 	[
 		"CSSRuleList"
@@ -6783,7 +7068,8 @@
 	],
 	[
 		"CSSStyleValue",
-		"prototype"
+		"prototype",
+		"toString()"
 	],
 	[
 		"CSSStyleValue",
@@ -6792,6 +7078,10 @@
 	[
 		"CSSStyleValue",
 		"parse()"
+	],
+	[
+		"CSSStyleValue",
+		"prototype"
 	],
 	[
 		"CSSSupportsRule"
@@ -6870,7 +7160,52 @@
 	[
 		"CSSToggleMap",
 		"prototype",
+		"values()"
+	],
+	[
+		"CSSToggleMap",
+		"prototype",
+		"size"
+	],
+	[
+		"CSSToggleMap",
+		"prototype",
 		"set()"
+	],
+	[
+		"CSSToggleMap",
+		"prototype",
+		"keys()"
+	],
+	[
+		"CSSToggleMap",
+		"prototype",
+		"has()"
+	],
+	[
+		"CSSToggleMap",
+		"prototype",
+		"get()"
+	],
+	[
+		"CSSToggleMap",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"CSSToggleMap",
+		"prototype",
+		"entries()"
+	],
+	[
+		"CSSToggleMap",
+		"prototype",
+		"delete()"
+	],
+	[
+		"CSSToggleMap",
+		"prototype",
+		"clear()"
 	],
 	[
 		"CSSToggleMap",
@@ -6878,6 +7213,11 @@
 	],
 	[
 		"CSSTransformComponent"
+	],
+	[
+		"CSSTransformComponent",
+		"prototype",
+		"toString()"
 	],
 	[
 		"CSSTransformComponent",
@@ -6899,6 +7239,11 @@
 	[
 		"CSSTransformValue",
 		"prototype",
+		"values()"
+	],
+	[
+		"CSSTransformValue",
+		"prototype",
 		"toMatrix()"
 	],
 	[
@@ -6909,7 +7254,27 @@
 	[
 		"CSSTransformValue",
 		"prototype",
+		"keys()"
+	],
+	[
+		"CSSTransformValue",
+		"prototype",
 		"is2D"
+	],
+	[
+		"CSSTransformValue",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"CSSTransformValue",
+		"prototype",
+		"entries()"
+	],
+	[
+		"CSSTransformValue",
+		"prototype",
+		"()"
 	],
 	[
 		"CSSTransformValue",
@@ -6972,7 +7337,32 @@
 	[
 		"CSSUnparsedValue",
 		"prototype",
+		"values()"
+	],
+	[
+		"CSSUnparsedValue",
+		"prototype",
 		"length"
+	],
+	[
+		"CSSUnparsedValue",
+		"prototype",
+		"keys()"
+	],
+	[
+		"CSSUnparsedValue",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"CSSUnparsedValue",
+		"prototype",
+		"entries()"
+	],
+	[
+		"CSSUnparsedValue",
+		"prototype",
+		"()"
 	],
 	[
 		"CSSUnparsedValue",
@@ -7063,6 +7453,51 @@
 	],
 	[
 		"CustomStateSet"
+	],
+	[
+		"CustomStateSet",
+		"prototype",
+		"values()"
+	],
+	[
+		"CustomStateSet",
+		"prototype",
+		"size"
+	],
+	[
+		"CustomStateSet",
+		"prototype",
+		"keys()"
+	],
+	[
+		"CustomStateSet",
+		"prototype",
+		"has()"
+	],
+	[
+		"CustomStateSet",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"CustomStateSet",
+		"prototype",
+		"entries()"
+	],
+	[
+		"CustomStateSet",
+		"prototype",
+		"delete()"
+	],
+	[
+		"CustomStateSet",
+		"prototype",
+		"clear()"
+	],
+	[
+		"CustomStateSet",
+		"prototype",
+		"add()"
 	],
 	[
 		"CustomStateSet",
@@ -7199,6 +7634,11 @@
 	],
 	[
 		"DataTransferItemList",
+		"prototype",
+		"()"
+	],
+	[
+		"DataTransferItemList",
 		"prototype"
 	],
 	[
@@ -7278,6 +7718,13 @@
 	],
 	[
 		"DecompressionStream",
+		"prototype"
+	],
+	[
+		"DedicatedWorkerGlobalScope"
+	],
+	[
+		"DedicatedWorkerGlobalScope",
 		"prototype"
 	],
 	[
@@ -7376,11 +7823,11 @@
 	],
 	[
 		"DeviceMotionEvent",
-		"prototype"
+		"requestPermission()"
 	],
 	[
 		"DeviceMotionEvent",
-		"requestPermission()"
+		"prototype"
 	],
 	[
 		"DeviceMotionEventAcceleration"
@@ -7451,11 +7898,11 @@
 	],
 	[
 		"DeviceOrientationEvent",
-		"prototype"
+		"requestPermission()"
 	],
 	[
 		"DeviceOrientationEvent",
-		"requestPermission()"
+		"prototype"
 	],
 	[
 		"DevicePosture"
@@ -8664,6 +9111,11 @@
 	[
 		"Document",
 		"prototype",
+		"browsingTopics()"
+	],
+	[
+		"Document",
+		"prototype",
 		"body"
 	],
 	[
@@ -8723,11 +9175,16 @@
 	],
 	[
 		"Document",
-		"prototype"
+		"prototype",
+		"()"
 	],
 	[
 		"Document",
 		"parseHTMLUnsafe()"
+	],
+	[
+		"Document",
+		"prototype"
 	],
 	[
 		"DocumentFragment"
@@ -9014,10 +9471,6 @@
 	],
 	[
 		"DOMException",
-		"prototype"
-	],
-	[
-		"DOMException",
 		"WRONG_DOCUMENT_ERR"
 	],
 	[
@@ -9115,6 +9568,10 @@
 	[
 		"DOMException",
 		"ABORT_ERR"
+	],
+	[
+		"DOMException",
+		"prototype"
 	],
 	[
 		"DOMImplementation"
@@ -9318,10 +9775,6 @@
 	],
 	[
 		"DOMMatrix",
-		"prototype"
-	],
-	[
-		"DOMMatrix",
 		"fromMatrix()"
 	],
 	[
@@ -9331,6 +9784,388 @@
 	[
 		"DOMMatrix",
 		"fromFloat32Array()"
+	],
+	[
+		"DOMMatrix",
+		"prototype"
+	],
+	[
+		"SVGMatrix"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"translateSelf()"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"skewYSelf()"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"skewXSelf()"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"setMatrixValue()"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"scaleSelf()"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"scale3dSelf()"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"rotateSelf()"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"rotateFromVectorSelf()"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"rotateAxisAngleSelf()"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"preMultiplySelf()"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"multiplySelf()"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"m44"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"m43"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"m42"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"m41"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"m34"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"m33"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"m32"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"m31"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"m24"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"m23"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"m22"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"m21"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"m14"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"m13"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"m12"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"m11"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"invertSelf()"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"f"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"e"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"d"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"c"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"b"
+	],
+	[
+		"SVGMatrix",
+		"prototype",
+		"a"
+	],
+	[
+		"SVGMatrix",
+		"fromMatrix()"
+	],
+	[
+		"SVGMatrix",
+		"fromFloat64Array()"
+	],
+	[
+		"SVGMatrix",
+		"fromFloat32Array()"
+	],
+	[
+		"SVGMatrix",
+		"prototype"
+	],
+	[
+		"WebKitCSSMatrix"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"translateSelf()"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"skewYSelf()"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"skewXSelf()"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"setMatrixValue()"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"scaleSelf()"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"scale3dSelf()"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"rotateSelf()"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"rotateFromVectorSelf()"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"rotateAxisAngleSelf()"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"preMultiplySelf()"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"multiplySelf()"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"m44"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"m43"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"m42"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"m41"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"m34"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"m33"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"m32"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"m31"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"m24"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"m23"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"m22"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"m21"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"m14"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"m13"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"m12"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"m11"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"invertSelf()"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"f"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"e"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"d"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"c"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"b"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype",
+		"a"
+	],
+	[
+		"WebKitCSSMatrix",
+		"fromMatrix()"
+	],
+	[
+		"WebKitCSSMatrix",
+		"fromFloat64Array()"
+	],
+	[
+		"WebKitCSSMatrix",
+		"fromFloat32Array()"
+	],
+	[
+		"WebKitCSSMatrix",
+		"prototype"
 	],
 	[
 		"DOMMatrixReadOnly"
@@ -9344,6 +10179,11 @@
 		"DOMMatrixReadOnly",
 		"prototype",
 		"transformPoint()"
+	],
+	[
+		"DOMMatrixReadOnly",
+		"prototype",
+		"toString()"
 	],
 	[
 		"DOMMatrixReadOnly",
@@ -9542,10 +10382,6 @@
 	],
 	[
 		"DOMMatrixReadOnly",
-		"prototype"
-	],
-	[
-		"DOMMatrixReadOnly",
 		"fromMatrix()"
 	],
 	[
@@ -9555,6 +10391,10 @@
 	[
 		"DOMMatrixReadOnly",
 		"fromFloat32Array()"
+	],
+	[
+		"DOMMatrixReadOnly",
+		"prototype"
 	],
 	[
 		"DOMParser"
@@ -9593,11 +10433,42 @@
 	],
 	[
 		"DOMPoint",
-		"prototype"
+		"fromPoint()"
 	],
 	[
 		"DOMPoint",
+		"prototype"
+	],
+	[
+		"SVGPoint"
+	],
+	[
+		"SVGPoint",
+		"prototype",
+		"z"
+	],
+	[
+		"SVGPoint",
+		"prototype",
+		"y"
+	],
+	[
+		"SVGPoint",
+		"prototype",
+		"x"
+	],
+	[
+		"SVGPoint",
+		"prototype",
+		"w"
+	],
+	[
+		"SVGPoint",
 		"fromPoint()"
+	],
+	[
+		"SVGPoint",
+		"prototype"
 	],
 	[
 		"DOMPointReadOnly"
@@ -9634,11 +10505,11 @@
 	],
 	[
 		"DOMPointReadOnly",
-		"prototype"
+		"fromPoint()"
 	],
 	[
 		"DOMPointReadOnly",
-		"fromPoint()"
+		"prototype"
 	],
 	[
 		"DOMQuad"
@@ -9675,15 +10546,15 @@
 	],
 	[
 		"DOMQuad",
-		"prototype"
-	],
-	[
-		"DOMQuad",
 		"fromRect()"
 	],
 	[
 		"DOMQuad",
 		"fromQuad()"
+	],
+	[
+		"DOMQuad",
+		"prototype"
 	],
 	[
 		"DOMRect"
@@ -9710,11 +10581,42 @@
 	],
 	[
 		"DOMRect",
-		"prototype"
+		"fromRect()"
 	],
 	[
 		"DOMRect",
+		"prototype"
+	],
+	[
+		"SVGRect"
+	],
+	[
+		"SVGRect",
+		"prototype",
+		"y"
+	],
+	[
+		"SVGRect",
+		"prototype",
+		"x"
+	],
+	[
+		"SVGRect",
+		"prototype",
+		"width"
+	],
+	[
+		"SVGRect",
+		"prototype",
+		"height"
+	],
+	[
+		"SVGRect",
 		"fromRect()"
+	],
+	[
+		"SVGRect",
+		"prototype"
 	],
 	[
 		"DOMRectList"
@@ -9783,11 +10685,11 @@
 	],
 	[
 		"DOMRectReadOnly",
-		"prototype"
+		"fromRect()"
 	],
 	[
 		"DOMRectReadOnly",
-		"fromRect()"
+		"prototype"
 	],
 	[
 		"DOMStringList"
@@ -9816,10 +10718,20 @@
 	],
 	[
 		"DOMStringMap",
+		"prototype",
+		"()"
+	],
+	[
+		"DOMStringMap",
 		"prototype"
 	],
 	[
 		"DOMTokenList"
+	],
+	[
+		"DOMTokenList",
+		"prototype",
+		"values()"
 	],
 	[
 		"DOMTokenList",
@@ -9854,7 +10766,22 @@
 	[
 		"DOMTokenList",
 		"prototype",
+		"keys()"
+	],
+	[
+		"DOMTokenList",
+		"prototype",
 		"item()"
+	],
+	[
+		"DOMTokenList",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"DOMTokenList",
+		"prototype",
+		"entries()"
 	],
 	[
 		"DOMTokenList",
@@ -11276,10 +12203,6 @@
 	],
 	[
 		"Event",
-		"prototype"
-	],
-	[
-		"Event",
 		"NONE"
 	],
 	[
@@ -11295,10 +12218,56 @@
 		"AT_TARGET"
 	],
 	[
+		"Event",
+		"prototype"
+	],
+	[
 		"EventCounts"
 	],
 	[
 		"EventCounts",
+		"prototype",
+		"values()"
+	],
+	[
+		"EventCounts",
+		"prototype",
+		"size"
+	],
+	[
+		"EventCounts",
+		"prototype",
+		"keys()"
+	],
+	[
+		"EventCounts",
+		"prototype",
+		"has()"
+	],
+	[
+		"EventCounts",
+		"prototype",
+		"get()"
+	],
+	[
+		"EventCounts",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"EventCounts",
+		"prototype",
+		"entries()"
+	],
+	[
+		"EventCounts",
+		"prototype"
+	],
+	[
+		"EventListener"
+	],
+	[
+		"EventListener",
 		"prototype"
 	],
 	[
@@ -11356,10 +12325,6 @@
 	],
 	[
 		"EventSource",
-		"prototype"
-	],
-	[
-		"EventSource",
 		"OPEN"
 	],
 	[
@@ -11369,6 +12334,10 @@
 	[
 		"EventSource",
 		"CLOSED"
+	],
+	[
+		"EventSource",
+		"prototype"
 	],
 	[
 		"EventTarget"
@@ -11419,15 +12388,15 @@
 	],
 	[
 		"EXT_blend_minmax",
-		"prototype"
-	],
-	[
-		"EXT_blend_minmax",
 		"MIN_EXT"
 	],
 	[
 		"EXT_blend_minmax",
 		"MAX_EXT"
+	],
+	[
+		"EXT_blend_minmax",
+		"prototype"
 	],
 	[
 		"EXT_color_buffer_float"
@@ -11461,10 +12430,6 @@
 	],
 	[
 		"EXT_color_buffer_half_float",
-		"prototype"
-	],
-	[
-		"EXT_color_buffer_half_float",
 		"UNSIGNED_NORMALIZED_EXT"
 	],
 	[
@@ -11478,6 +12443,10 @@
 	[
 		"EXT_color_buffer_half_float",
 		"FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT"
+	],
+	[
+		"EXT_color_buffer_half_float",
+		"prototype"
 	],
 	[
 		"EXT_disjoint_timer_query"
@@ -11559,10 +12528,6 @@
 	],
 	[
 		"EXT_disjoint_timer_query",
-		"prototype"
-	],
-	[
-		"EXT_disjoint_timer_query",
 		"TIME_ELAPSED_EXT"
 	],
 	[
@@ -11588,6 +12553,10 @@
 	[
 		"EXT_disjoint_timer_query",
 		"CURRENT_QUERY_EXT"
+	],
+	[
+		"EXT_disjoint_timer_query",
+		"prototype"
 	],
 	[
 		"EXT_disjoint_timer_query_webgl2"
@@ -11619,10 +12588,6 @@
 	],
 	[
 		"EXT_disjoint_timer_query_webgl2",
-		"prototype"
-	],
-	[
-		"EXT_disjoint_timer_query_webgl2",
 		"TIME_ELAPSED_EXT"
 	],
 	[
@@ -11636,6 +12601,10 @@
 	[
 		"EXT_disjoint_timer_query_webgl2",
 		"GPU_DISJOINT_EXT"
+	],
+	[
+		"EXT_disjoint_timer_query_webgl2",
+		"prototype"
 	],
 	[
 		"EXT_float_blend"
@@ -11683,10 +12652,6 @@
 	],
 	[
 		"EXT_sRGB",
-		"prototype"
-	],
-	[
-		"EXT_sRGB",
 		"SRGB_EXT"
 	],
 	[
@@ -11700,6 +12665,10 @@
 	[
 		"EXT_sRGB",
 		"FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT"
+	],
+	[
+		"EXT_sRGB",
+		"prototype"
 	],
 	[
 		"EXT_texture_compression_bptc"
@@ -11726,10 +12695,6 @@
 	],
 	[
 		"EXT_texture_compression_bptc",
-		"prototype"
-	],
-	[
-		"EXT_texture_compression_bptc",
 		"COMPRESSED_SRGB_ALPHA_BPTC_UNORM_EXT"
 	],
 	[
@@ -11743,6 +12708,10 @@
 	[
 		"EXT_texture_compression_bptc",
 		"COMPRESSED_RGBA_BPTC_UNORM_EXT"
+	],
+	[
+		"EXT_texture_compression_bptc",
+		"prototype"
 	],
 	[
 		"EXT_texture_compression_rgtc"
@@ -11769,10 +12738,6 @@
 	],
 	[
 		"EXT_texture_compression_rgtc",
-		"prototype"
-	],
-	[
-		"EXT_texture_compression_rgtc",
 		"COMPRESSED_SIGNED_RED_RGTC1_EXT"
 	],
 	[
@@ -11786,6 +12751,10 @@
 	[
 		"EXT_texture_compression_rgtc",
 		"COMPRESSED_RED_GREEN_RGTC2_EXT"
+	],
+	[
+		"EXT_texture_compression_rgtc",
+		"prototype"
 	],
 	[
 		"EXT_texture_filter_anisotropic"
@@ -11802,15 +12771,15 @@
 	],
 	[
 		"EXT_texture_filter_anisotropic",
-		"prototype"
-	],
-	[
-		"EXT_texture_filter_anisotropic",
 		"TEXTURE_MAX_ANISOTROPY_EXT"
 	],
 	[
 		"EXT_texture_filter_anisotropic",
 		"MAX_TEXTURE_MAX_ANISOTROPY_EXT"
+	],
+	[
+		"EXT_texture_filter_anisotropic",
+		"prototype"
 	],
 	[
 		"EXT_texture_norm16"
@@ -11857,10 +12826,6 @@
 	],
 	[
 		"EXT_texture_norm16",
-		"prototype"
-	],
-	[
-		"EXT_texture_norm16",
 		"RGBA16_SNORM_EXT"
 	],
 	[
@@ -11890,6 +12855,10 @@
 	[
 		"EXT_texture_norm16",
 		"R16_EXT"
+	],
+	[
+		"EXT_texture_norm16",
+		"prototype"
 	],
 	[
 		"ExtendableCookieChangeEvent"
@@ -12237,10 +13206,6 @@
 	],
 	[
 		"FileReader",
-		"prototype"
-	],
-	[
-		"FileReader",
 		"LOADING"
 	],
 	[
@@ -12250,6 +13215,10 @@
 	[
 		"FileReader",
 		"DONE"
+	],
+	[
+		"FileReader",
+		"prototype"
 	],
 	[
 		"FileReaderSync"
@@ -12323,6 +13292,11 @@
 	[
 		"FileSystemDirectoryHandle",
 		"prototype",
+		"values()"
+	],
+	[
+		"FileSystemDirectoryHandle",
+		"prototype",
 		"resolve()"
 	],
 	[
@@ -12333,12 +13307,27 @@
 	[
 		"FileSystemDirectoryHandle",
 		"prototype",
+		"keys()"
+	],
+	[
+		"FileSystemDirectoryHandle",
+		"prototype",
 		"getFileHandle()"
 	],
 	[
 		"FileSystemDirectoryHandle",
 		"prototype",
 		"getDirectoryHandle()"
+	],
+	[
+		"FileSystemDirectoryHandle",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"FileSystemDirectoryHandle",
+		"prototype",
+		"entries()"
 	],
 	[
 		"FileSystemDirectoryHandle",
@@ -12696,6 +13685,11 @@
 	[
 		"FontFacePalette",
 		"prototype",
+		"values()"
+	],
+	[
+		"FontFacePalette",
+		"prototype",
 		"usableWithLightBackground"
 	],
 	[
@@ -12710,6 +13704,26 @@
 	],
 	[
 		"FontFacePalette",
+		"prototype",
+		"keys()"
+	],
+	[
+		"FontFacePalette",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"FontFacePalette",
+		"prototype",
+		"entries()"
+	],
+	[
+		"FontFacePalette",
+		"prototype",
+		"()"
+	],
+	[
+		"FontFacePalette",
 		"prototype"
 	],
 	[
@@ -12718,7 +13732,32 @@
 	[
 		"FontFacePalettes",
 		"prototype",
+		"values()"
+	],
+	[
+		"FontFacePalettes",
+		"prototype",
 		"length"
+	],
+	[
+		"FontFacePalettes",
+		"prototype",
+		"keys()"
+	],
+	[
+		"FontFacePalettes",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"FontFacePalettes",
+		"prototype",
+		"entries()"
+	],
+	[
+		"FontFacePalettes",
+		"prototype",
+		"()"
 	],
 	[
 		"FontFacePalettes",
@@ -12730,7 +13769,17 @@
 	[
 		"FontFaceSet",
 		"prototype",
+		"values()"
+	],
+	[
+		"FontFaceSet",
+		"prototype",
 		"status"
+	],
+	[
+		"FontFaceSet",
+		"prototype",
+		"size"
 	],
 	[
 		"FontFaceSet",
@@ -12756,6 +13805,26 @@
 		"FontFaceSet",
 		"prototype",
 		"load()"
+	],
+	[
+		"FontFaceSet",
+		"prototype",
+		"keys()"
+	],
+	[
+		"FontFaceSet",
+		"prototype",
+		"has()"
+	],
+	[
+		"FontFaceSet",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"FontFaceSet",
+		"prototype",
+		"entries()"
 	],
 	[
 		"FontFaceSet",
@@ -12827,6 +13896,36 @@
 	],
 	[
 		"FontFaceVariations"
+	],
+	[
+		"FontFaceVariations",
+		"prototype",
+		"values()"
+	],
+	[
+		"FontFaceVariations",
+		"prototype",
+		"size"
+	],
+	[
+		"FontFaceVariations",
+		"prototype",
+		"keys()"
+	],
+	[
+		"FontFaceVariations",
+		"prototype",
+		"has()"
+	],
+	[
+		"FontFaceVariations",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"FontFaceVariations",
+		"prototype",
+		"entries()"
 	],
 	[
 		"FontFaceVariations",
@@ -12932,7 +14031,17 @@
 	[
 		"FormData",
 		"prototype",
+		"values()"
+	],
+	[
+		"FormData",
+		"prototype",
 		"set()"
+	],
+	[
+		"FormData",
+		"prototype",
+		"keys()"
 	],
 	[
 		"FormData",
@@ -12948,6 +14057,16 @@
 		"FormData",
 		"prototype",
 		"get()"
+	],
+	[
+		"FormData",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"FormData",
+		"prototype",
+		"entries()"
 	],
 	[
 		"FormData",
@@ -13334,10 +14453,6 @@
 	],
 	[
 		"GeolocationPositionError",
-		"prototype"
-	],
-	[
-		"GeolocationPositionError",
 		"TIMEOUT"
 	],
 	[
@@ -13347,6 +14462,10 @@
 	[
 		"GeolocationPositionError",
 		"PERMISSION_DENIED"
+	],
+	[
+		"GeolocationPositionError",
+		"prototype"
 	],
 	[
 		"GeolocationSensor"
@@ -13388,11 +14507,11 @@
 	],
 	[
 		"GeolocationSensor",
-		"prototype"
+		"read()"
 	],
 	[
 		"GeolocationSensor",
-		"read()"
+		"prototype"
 	],
 	[
 		"Global"
@@ -14396,6 +15515,36 @@
 	],
 	[
 		"GPUSupportedFeatures",
+		"prototype",
+		"values()"
+	],
+	[
+		"GPUSupportedFeatures",
+		"prototype",
+		"size"
+	],
+	[
+		"GPUSupportedFeatures",
+		"prototype",
+		"keys()"
+	],
+	[
+		"GPUSupportedFeatures",
+		"prototype",
+		"has()"
+	],
+	[
+		"GPUSupportedFeatures",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"GPUSupportedFeatures",
+		"prototype",
+		"entries()"
+	],
+	[
+		"GPUSupportedFeatures",
 		"prototype"
 	],
 	[
@@ -14851,7 +16000,17 @@
 	[
 		"Headers",
 		"prototype",
+		"values()"
+	],
+	[
+		"Headers",
+		"prototype",
 		"set()"
+	],
+	[
+		"Headers",
+		"prototype",
+		"keys()"
 	],
 	[
 		"Headers",
@@ -14867,6 +16026,16 @@
 		"Headers",
 		"prototype",
 		"get()"
+	],
+	[
+		"Headers",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"Headers",
+		"prototype",
+		"entries()"
 	],
 	[
 		"Headers",
@@ -15016,7 +16185,17 @@
 	[
 		"Highlight",
 		"prototype",
+		"values()"
+	],
+	[
+		"Highlight",
+		"prototype",
 		"type"
+	],
+	[
+		"Highlight",
+		"prototype",
+		"size"
 	],
 	[
 		"Highlight",
@@ -15025,10 +16204,95 @@
 	],
 	[
 		"Highlight",
+		"prototype",
+		"keys()"
+	],
+	[
+		"Highlight",
+		"prototype",
+		"has()"
+	],
+	[
+		"Highlight",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"Highlight",
+		"prototype",
+		"entries()"
+	],
+	[
+		"Highlight",
+		"prototype",
+		"delete()"
+	],
+	[
+		"Highlight",
+		"prototype",
+		"clear()"
+	],
+	[
+		"Highlight",
+		"prototype",
+		"add()"
+	],
+	[
+		"Highlight",
 		"prototype"
 	],
 	[
 		"HighlightRegistry"
+	],
+	[
+		"HighlightRegistry",
+		"prototype",
+		"values()"
+	],
+	[
+		"HighlightRegistry",
+		"prototype",
+		"size"
+	],
+	[
+		"HighlightRegistry",
+		"prototype",
+		"set()"
+	],
+	[
+		"HighlightRegistry",
+		"prototype",
+		"keys()"
+	],
+	[
+		"HighlightRegistry",
+		"prototype",
+		"has()"
+	],
+	[
+		"HighlightRegistry",
+		"prototype",
+		"get()"
+	],
+	[
+		"HighlightRegistry",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"HighlightRegistry",
+		"prototype",
+		"entries()"
+	],
+	[
+		"HighlightRegistry",
+		"prototype",
+		"delete()"
+	],
+	[
+		"HighlightRegistry",
+		"prototype",
+		"clear()"
 	],
 	[
 		"HighlightRegistry",
@@ -15098,6 +16362,11 @@
 		"HTMLAllCollection",
 		"prototype",
 		"item()"
+	],
+	[
+		"HTMLAllCollection",
+		"prototype",
+		"()"
 	],
 	[
 		"HTMLAllCollection",
@@ -15362,6 +16631,13 @@
 	],
 	[
 		"HTMLAudioElement",
+		"prototype"
+	],
+	[
+		"Audio"
+	],
+	[
+		"Audio",
 		"prototype"
 	],
 	[
@@ -16802,6 +18078,11 @@
 	],
 	[
 		"HTMLFormElement",
+		"prototype",
+		"()"
+	],
+	[
+		"HTMLFormElement",
 		"prototype"
 	],
 	[
@@ -17167,6 +18448,11 @@
 	[
 		"HTMLIFrameElement",
 		"prototype",
+		"browsingTopics"
+	],
+	[
+		"HTMLIFrameElement",
+		"prototype",
 		"allowFullscreen"
 	],
 	[
@@ -17338,6 +18624,158 @@
 	],
 	[
 		"HTMLImageElement",
+		"prototype"
+	],
+	[
+		"Image"
+	],
+	[
+		"Image",
+		"prototype",
+		"y"
+	],
+	[
+		"Image",
+		"prototype",
+		"x"
+	],
+	[
+		"Image",
+		"prototype",
+		"width"
+	],
+	[
+		"Image",
+		"prototype",
+		"vspace"
+	],
+	[
+		"Image",
+		"prototype",
+		"useMap"
+	],
+	[
+		"Image",
+		"prototype",
+		"srcset"
+	],
+	[
+		"Image",
+		"prototype",
+		"src"
+	],
+	[
+		"Image",
+		"prototype",
+		"sizes"
+	],
+	[
+		"Image",
+		"prototype",
+		"sharedStorageWritable"
+	],
+	[
+		"Image",
+		"prototype",
+		"referrerPolicy"
+	],
+	[
+		"Image",
+		"prototype",
+		"naturalWidth"
+	],
+	[
+		"Image",
+		"prototype",
+		"naturalHeight"
+	],
+	[
+		"Image",
+		"prototype",
+		"name"
+	],
+	[
+		"Image",
+		"prototype",
+		"lowsrc"
+	],
+	[
+		"Image",
+		"prototype",
+		"longDesc"
+	],
+	[
+		"Image",
+		"prototype",
+		"loading"
+	],
+	[
+		"Image",
+		"prototype",
+		"isMap"
+	],
+	[
+		"Image",
+		"prototype",
+		"hspace"
+	],
+	[
+		"Image",
+		"prototype",
+		"height"
+	],
+	[
+		"Image",
+		"prototype",
+		"fetchPriority"
+	],
+	[
+		"Image",
+		"prototype",
+		"decoding"
+	],
+	[
+		"Image",
+		"prototype",
+		"decode()"
+	],
+	[
+		"Image",
+		"prototype",
+		"currentSrc"
+	],
+	[
+		"Image",
+		"prototype",
+		"crossOrigin"
+	],
+	[
+		"Image",
+		"prototype",
+		"complete"
+	],
+	[
+		"Image",
+		"prototype",
+		"border"
+	],
+	[
+		"Image",
+		"prototype",
+		"attributionSrc"
+	],
+	[
+		"Image",
+		"prototype",
+		"alt"
+	],
+	[
+		"Image",
+		"prototype",
+		"align"
+	],
+	[
+		"Image",
 		"prototype"
 	],
 	[
@@ -18164,10 +19602,6 @@
 	],
 	[
 		"HTMLMediaElement",
-		"prototype"
-	],
-	[
-		"HTMLMediaElement",
 		"NETWORK_NO_SOURCE"
 	],
 	[
@@ -18201,6 +19635,10 @@
 	[
 		"HTMLMediaElement",
 		"HAVE_CURRENT_DATA"
+	],
+	[
+		"HTMLMediaElement",
+		"prototype"
 	],
 	[
 		"HTMLMenuElement"
@@ -18541,6 +19979,53 @@
 		"prototype"
 	],
 	[
+		"Option"
+	],
+	[
+		"Option",
+		"prototype",
+		"value"
+	],
+	[
+		"Option",
+		"prototype",
+		"text"
+	],
+	[
+		"Option",
+		"prototype",
+		"selected"
+	],
+	[
+		"Option",
+		"prototype",
+		"label"
+	],
+	[
+		"Option",
+		"prototype",
+		"index"
+	],
+	[
+		"Option",
+		"prototype",
+		"form"
+	],
+	[
+		"Option",
+		"prototype",
+		"disabled"
+	],
+	[
+		"Option",
+		"prototype",
+		"defaultSelected"
+	],
+	[
+		"Option",
+		"prototype"
+	],
+	[
 		"HTMLOptionsCollection"
 	],
 	[
@@ -18562,6 +20047,11 @@
 		"HTMLOptionsCollection",
 		"prototype",
 		"add()"
+	],
+	[
+		"HTMLOptionsCollection",
+		"prototype",
+		"()"
 	],
 	[
 		"HTMLOptionsCollection",
@@ -18853,11 +20343,11 @@
 	],
 	[
 		"HTMLScriptElement",
-		"prototype"
+		"supports()"
 	],
 	[
 		"HTMLScriptElement",
-		"supports()"
+		"prototype"
 	],
 	[
 		"HTMLSelectElement"
@@ -18986,6 +20476,11 @@
 		"HTMLSelectElement",
 		"prototype",
 		"add()"
+	],
+	[
+		"HTMLSelectElement",
+		"prototype",
+		"()"
 	],
 	[
 		"HTMLSelectElement",
@@ -19724,10 +21219,6 @@
 	],
 	[
 		"HTMLTrackElement",
-		"prototype"
-	],
-	[
-		"HTMLTrackElement",
 		"NONE"
 	],
 	[
@@ -19741,6 +21232,10 @@
 	[
 		"HTMLTrackElement",
 		"ERROR"
+	],
+	[
+		"HTMLTrackElement",
+		"prototype"
 	],
 	[
 		"HTMLUListElement"
@@ -20093,10 +21588,6 @@
 	],
 	[
 		"IDBKeyRange",
-		"prototype"
-	],
-	[
-		"IDBKeyRange",
 		"upperBound()"
 	],
 	[
@@ -20110,6 +21601,10 @@
 	[
 		"IDBKeyRange",
 		"bound()"
+	],
+	[
+		"IDBKeyRange",
+		"prototype"
 	],
 	[
 		"IDBObjectStore"
@@ -20366,18 +21861,14 @@
 	],
 	[
 		"IdentityCredential",
-		"prototype"
-	],
-	[
-		"IdentityCredential",
 		"disconnect()"
 	],
 	[
-		"IdentityProvider"
+		"IdentityCredential",
+		"prototype"
 	],
 	[
-		"IdentityProvider",
-		"prototype"
+		"IdentityProvider"
 	],
 	[
 		"IdentityProvider",
@@ -20386,6 +21877,10 @@
 	[
 		"IdentityProvider",
 		"close()"
+	],
+	[
+		"IdentityProvider",
+		"prototype"
 	],
 	[
 		"IdleDeadline"
@@ -20429,11 +21924,11 @@
 	],
 	[
 		"IdleDetector",
-		"prototype"
+		"requestPermission()"
 	],
 	[
 		"IdleDetector",
-		"requestPermission()"
+		"prototype"
 	],
 	[
 		"IIRFilterNode"
@@ -20585,11 +22080,11 @@
 	],
 	[
 		"ImageDecoder",
-		"prototype"
+		"isTypeSupported()"
 	],
 	[
 		"ImageDecoder",
-		"isTypeSupported()"
+		"prototype"
 	],
 	[
 		"ImageTrack"
@@ -20640,6 +22135,11 @@
 		"ImageTrackList",
 		"prototype",
 		"length"
+	],
+	[
+		"ImageTrackList",
+		"prototype",
+		"()"
 	],
 	[
 		"ImageTrackList",
@@ -21114,10 +22614,6 @@
 	],
 	[
 		"KeyboardEvent",
-		"prototype"
-	],
-	[
-		"KeyboardEvent",
 		"DOM_KEY_LOCATION_STANDARD"
 	],
 	[
@@ -21133,7 +22629,46 @@
 		"DOM_KEY_LOCATION_LEFT"
 	],
 	[
+		"KeyboardEvent",
+		"prototype"
+	],
+	[
 		"KeyboardLayoutMap"
+	],
+	[
+		"KeyboardLayoutMap",
+		"prototype",
+		"values()"
+	],
+	[
+		"KeyboardLayoutMap",
+		"prototype",
+		"size"
+	],
+	[
+		"KeyboardLayoutMap",
+		"prototype",
+		"keys()"
+	],
+	[
+		"KeyboardLayoutMap",
+		"prototype",
+		"has()"
+	],
+	[
+		"KeyboardLayoutMap",
+		"prototype",
+		"get()"
+	],
+	[
+		"KeyboardLayoutMap",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"KeyboardLayoutMap",
+		"prototype",
+		"entries()"
 	],
 	[
 		"KeyboardLayoutMap",
@@ -21198,14 +22733,19 @@
 	],
 	[
 		"KHR_parallel_shader_compile",
-		"prototype"
-	],
-	[
-		"KHR_parallel_shader_compile",
 		"COMPLETION_STATUS_KHR"
 	],
 	[
+		"KHR_parallel_shader_compile",
+		"prototype"
+	],
+	[
 		"Label"
+	],
+	[
+		"Label",
+		"prototype",
+		"toString()"
 	],
 	[
 		"Label",
@@ -22459,10 +23999,6 @@
 	],
 	[
 		"MediaError",
-		"prototype"
-	],
-	[
-		"MediaError",
 		"MEDIA_ERR_SRC_NOT_SUPPORTED"
 	],
 	[
@@ -22476,6 +24012,10 @@
 	[
 		"MediaError",
 		"MEDIA_ERR_ABORTED"
+	],
+	[
+		"MediaError",
+		"prototype"
 	],
 	[
 		"MediaKeyMessageEvent"
@@ -22584,7 +24124,17 @@
 	[
 		"MediaKeyStatusMap",
 		"prototype",
+		"values()"
+	],
+	[
+		"MediaKeyStatusMap",
+		"prototype",
 		"size"
+	],
+	[
+		"MediaKeyStatusMap",
+		"prototype",
+		"keys()"
 	],
 	[
 		"MediaKeyStatusMap",
@@ -22595,6 +24145,16 @@
 		"MediaKeyStatusMap",
 		"prototype",
 		"get()"
+	],
+	[
+		"MediaKeyStatusMap",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"MediaKeyStatusMap",
+		"prototype",
+		"entries()"
 	],
 	[
 		"MediaKeyStatusMap",
@@ -22825,11 +24385,11 @@
 	],
 	[
 		"MediaRecorder",
-		"prototype"
+		"isTypeSupported()"
 	],
 	[
 		"MediaRecorder",
-		"isTypeSupported()"
+		"prototype"
 	],
 	[
 		"MediaSession"
@@ -22943,15 +24503,15 @@
 	],
 	[
 		"MediaSource",
-		"prototype"
-	],
-	[
-		"MediaSource",
 		"isTypeSupported()"
 	],
 	[
 		"MediaSource",
 		"canConstructInDedicatedWorker"
+	],
+	[
+		"MediaSource",
+		"prototype"
 	],
 	[
 		"MediaSourceHandle"
@@ -23489,6 +25049,41 @@
 	],
 	[
 		"MIDIInputMap",
+		"prototype",
+		"values()"
+	],
+	[
+		"MIDIInputMap",
+		"prototype",
+		"size"
+	],
+	[
+		"MIDIInputMap",
+		"prototype",
+		"keys()"
+	],
+	[
+		"MIDIInputMap",
+		"prototype",
+		"has()"
+	],
+	[
+		"MIDIInputMap",
+		"prototype",
+		"get()"
+	],
+	[
+		"MIDIInputMap",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"MIDIInputMap",
+		"prototype",
+		"entries()"
+	],
+	[
+		"MIDIInputMap",
 		"prototype"
 	],
 	[
@@ -23522,6 +25117,41 @@
 	],
 	[
 		"MIDIOutputMap"
+	],
+	[
+		"MIDIOutputMap",
+		"prototype",
+		"values()"
+	],
+	[
+		"MIDIOutputMap",
+		"prototype",
+		"size"
+	],
+	[
+		"MIDIOutputMap",
+		"prototype",
+		"keys()"
+	],
+	[
+		"MIDIOutputMap",
+		"prototype",
+		"has()"
+	],
+	[
+		"MIDIOutputMap",
+		"prototype",
+		"get()"
+	],
+	[
+		"MIDIOutputMap",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"MIDIOutputMap",
+		"prototype",
+		"entries()"
 	],
 	[
 		"MIDIOutputMap",
@@ -24137,10 +25767,6 @@
 	],
 	[
 		"Module",
-		"prototype"
-	],
-	[
-		"Module",
 		"imports()"
 	],
 	[
@@ -24150,6 +25776,10 @@
 	[
 		"Module",
 		"customSections()"
+	],
+	[
+		"Module",
+		"prototype"
 	],
 	[
 		"MonetizationCurrencyAmount"
@@ -24382,10 +26012,6 @@
 	],
 	[
 		"MutationEvent",
-		"prototype"
-	],
-	[
-		"MutationEvent",
 		"REMOVAL"
 	],
 	[
@@ -24395,6 +26021,10 @@
 	[
 		"MutationEvent",
 		"ADDITION"
+	],
+	[
+		"MutationEvent",
+		"prototype"
 	],
 	[
 		"MutationObserver"
@@ -24509,6 +26139,56 @@
 	],
 	[
 		"NamedFlowMap"
+	],
+	[
+		"NamedFlowMap",
+		"prototype",
+		"values()"
+	],
+	[
+		"NamedFlowMap",
+		"prototype",
+		"size"
+	],
+	[
+		"NamedFlowMap",
+		"prototype",
+		"set()"
+	],
+	[
+		"NamedFlowMap",
+		"prototype",
+		"keys()"
+	],
+	[
+		"NamedFlowMap",
+		"prototype",
+		"has()"
+	],
+	[
+		"NamedFlowMap",
+		"prototype",
+		"get()"
+	],
+	[
+		"NamedFlowMap",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"NamedFlowMap",
+		"prototype",
+		"entries()"
+	],
+	[
+		"NamedFlowMap",
+		"prototype",
+		"delete()"
+	],
+	[
+		"NamedFlowMap",
+		"prototype",
+		"clear()"
 	],
 	[
 		"NamedFlowMap",
@@ -25066,6 +26746,11 @@
 		"Navigator",
 		"prototype",
 		"presentation"
+	],
+	[
+		"Navigator",
+		"prototype",
+		"preferences"
 	],
 	[
 		"Navigator",
@@ -25795,10 +27480,6 @@
 	],
 	[
 		"Node",
-		"prototype"
-	],
-	[
-		"Node",
 		"TEXT_NODE"
 	],
 	[
@@ -25870,6 +27551,161 @@
 		"ATTRIBUTE_NODE"
 	],
 	[
+		"Node",
+		"prototype"
+	],
+	[
+		"NodeFilter"
+	],
+	[
+		"NodeFilter",
+		"prototype",
+		"SHOW_TEXT"
+	],
+	[
+		"NodeFilter",
+		"prototype",
+		"SHOW_PROCESSING_INSTRUCTION"
+	],
+	[
+		"NodeFilter",
+		"prototype",
+		"SHOW_NOTATION"
+	],
+	[
+		"NodeFilter",
+		"prototype",
+		"SHOW_ENTITY_REFERENCE"
+	],
+	[
+		"NodeFilter",
+		"prototype",
+		"SHOW_ENTITY"
+	],
+	[
+		"NodeFilter",
+		"prototype",
+		"SHOW_ELEMENT"
+	],
+	[
+		"NodeFilter",
+		"prototype",
+		"SHOW_DOCUMENT_TYPE"
+	],
+	[
+		"NodeFilter",
+		"prototype",
+		"SHOW_DOCUMENT_FRAGMENT"
+	],
+	[
+		"NodeFilter",
+		"prototype",
+		"SHOW_DOCUMENT"
+	],
+	[
+		"NodeFilter",
+		"prototype",
+		"SHOW_COMMENT"
+	],
+	[
+		"NodeFilter",
+		"prototype",
+		"SHOW_CDATA_SECTION"
+	],
+	[
+		"NodeFilter",
+		"prototype",
+		"SHOW_ATTRIBUTE"
+	],
+	[
+		"NodeFilter",
+		"prototype",
+		"SHOW_ALL"
+	],
+	[
+		"NodeFilter",
+		"prototype",
+		"FILTER_SKIP"
+	],
+	[
+		"NodeFilter",
+		"prototype",
+		"FILTER_REJECT"
+	],
+	[
+		"NodeFilter",
+		"prototype",
+		"FILTER_ACCEPT"
+	],
+	[
+		"NodeFilter",
+		"SHOW_TEXT"
+	],
+	[
+		"NodeFilter",
+		"SHOW_PROCESSING_INSTRUCTION"
+	],
+	[
+		"NodeFilter",
+		"SHOW_NOTATION"
+	],
+	[
+		"NodeFilter",
+		"SHOW_ENTITY_REFERENCE"
+	],
+	[
+		"NodeFilter",
+		"SHOW_ENTITY"
+	],
+	[
+		"NodeFilter",
+		"SHOW_ELEMENT"
+	],
+	[
+		"NodeFilter",
+		"SHOW_DOCUMENT_TYPE"
+	],
+	[
+		"NodeFilter",
+		"SHOW_DOCUMENT_FRAGMENT"
+	],
+	[
+		"NodeFilter",
+		"SHOW_DOCUMENT"
+	],
+	[
+		"NodeFilter",
+		"SHOW_COMMENT"
+	],
+	[
+		"NodeFilter",
+		"SHOW_CDATA_SECTION"
+	],
+	[
+		"NodeFilter",
+		"SHOW_ATTRIBUTE"
+	],
+	[
+		"NodeFilter",
+		"SHOW_ALL"
+	],
+	[
+		"NodeFilter",
+		"FILTER_SKIP"
+	],
+	[
+		"NodeFilter",
+		"FILTER_REJECT"
+	],
+	[
+		"NodeFilter",
+		"FILTER_ACCEPT"
+	],
+	[
+		"NodeFilter",
+		"prototype"
+	],
+	[
 		"NodeIterator"
 	],
 	[
@@ -25922,12 +27758,32 @@
 	[
 		"NodeList",
 		"prototype",
+		"values()"
+	],
+	[
+		"NodeList",
+		"prototype",
 		"length"
 	],
 	[
 		"NodeList",
 		"prototype",
+		"keys()"
+	],
+	[
+		"NodeList",
+		"prototype",
 		"item()"
+	],
+	[
+		"NodeList",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"NodeList",
+		"prototype",
+		"entries()"
 	],
 	[
 		"NodeList",
@@ -26038,10 +27894,6 @@
 	],
 	[
 		"Notification",
-		"prototype"
-	],
-	[
-		"Notification",
 		"requestPermission()"
 	],
 	[
@@ -26051,6 +27903,10 @@
 	[
 		"Notification",
 		"maxActions"
+	],
+	[
+		"Notification",
+		"prototype"
 	],
 	[
 		"NotificationEvent"
@@ -26228,11 +28084,11 @@
 	],
 	[
 		"Observable",
-		"prototype"
+		"from()"
 	],
 	[
 		"Observable",
-		"from()"
+		"prototype"
 	],
 	[
 		"OES_draw_buffers_indexed"
@@ -26300,11 +28156,11 @@
 	],
 	[
 		"OES_standard_derivatives",
-		"prototype"
+		"FRAGMENT_SHADER_DERIVATIVE_HINT_OES"
 	],
 	[
 		"OES_standard_derivatives",
-		"FRAGMENT_SHADER_DERIVATIVE_HINT_OES"
+		"prototype"
 	],
 	[
 		"OES_texture_float"
@@ -26330,11 +28186,11 @@
 	],
 	[
 		"OES_texture_half_float",
-		"prototype"
+		"HALF_FLOAT_OES"
 	],
 	[
 		"OES_texture_half_float",
-		"HALF_FLOAT_OES"
+		"prototype"
 	],
 	[
 		"OES_texture_half_float_linear"
@@ -26373,11 +28229,11 @@
 	],
 	[
 		"OES_vertex_array_object",
-		"prototype"
+		"VERTEX_ARRAY_BINDING_OES"
 	],
 	[
 		"OES_vertex_array_object",
-		"VERTEX_ARRAY_BINDING_OES"
+		"prototype"
 	],
 	[
 		"OfflineAudioCompletionEvent"
@@ -26920,10 +28776,6 @@
 	],
 	[
 		"OVR_multiview2",
-		"prototype"
-	],
-	[
-		"OVR_multiview2",
 		"MAX_VIEWS_OVR"
 	],
 	[
@@ -26937,6 +28789,10 @@
 	[
 		"OVR_multiview2",
 		"FRAMEBUFFER_ATTACHMENT_TEXTURE_BASE_VIEW_INDEX_OVR"
+	],
+	[
+		"OVR_multiview2",
+		"prototype"
 	],
 	[
 		"PageRevealEvent"
@@ -27540,11 +29396,11 @@
 	],
 	[
 		"PaymentRequest",
-		"prototype"
+		"isSecurePaymentConfirmationAvailable()"
 	],
 	[
 		"PaymentRequest",
-		"isSecurePaymentConfirmationAvailable()"
+		"prototype"
 	],
 	[
 		"PaymentRequestEvent"
@@ -28154,10 +30010,6 @@
 	],
 	[
 		"PerformanceNavigation",
-		"prototype"
-	],
-	[
-		"PerformanceNavigation",
 		"TYPE_RESERVED"
 	],
 	[
@@ -28171,6 +30023,10 @@
 	[
 		"PerformanceNavigation",
 		"TYPE_BACK_FORWARD"
+	],
+	[
+		"PerformanceNavigation",
+		"prototype"
 	],
 	[
 		"PerformanceNavigationTiming"
@@ -28269,11 +30125,11 @@
 	],
 	[
 		"PerformanceObserver",
-		"prototype"
+		"supportedEntryTypes"
 	],
 	[
 		"PerformanceObserver",
-		"supportedEntryTypes"
+		"prototype"
 	],
 	[
 		"PerformanceObserverEntryList"
@@ -29043,6 +30899,75 @@
 		"prototype"
 	],
 	[
+		"PreferenceManager"
+	],
+	[
+		"PreferenceManager",
+		"prototype",
+		"reducedTransparency"
+	],
+	[
+		"PreferenceManager",
+		"prototype",
+		"reducedMotion"
+	],
+	[
+		"PreferenceManager",
+		"prototype",
+		"reducedData"
+	],
+	[
+		"PreferenceManager",
+		"prototype",
+		"contrast"
+	],
+	[
+		"PreferenceManager",
+		"prototype",
+		"colorScheme"
+	],
+	[
+		"PreferenceManager",
+		"prototype"
+	],
+	[
+		"PreferenceObject"
+	],
+	[
+		"PreferenceObject",
+		"prototype",
+		"value"
+	],
+	[
+		"PreferenceObject",
+		"prototype",
+		"validValues"
+	],
+	[
+		"PreferenceObject",
+		"prototype",
+		"requestOverride()"
+	],
+	[
+		"PreferenceObject",
+		"prototype",
+		"override"
+	],
+	[
+		"PreferenceObject",
+		"prototype",
+		"onchange"
+	],
+	[
+		"PreferenceObject",
+		"prototype",
+		"clearOverride()"
+	],
+	[
+		"PreferenceObject",
+		"prototype"
+	],
+	[
 		"Presentation"
 	],
 	[
@@ -29248,11 +31173,11 @@
 	],
 	[
 		"PressureObserver",
-		"prototype"
+		"knownSources"
 	],
 	[
 		"PressureObserver",
-		"knownSources"
+		"prototype"
 	],
 	[
 		"PressureRecord"
@@ -29323,11 +31248,11 @@
 	],
 	[
 		"Privilege",
-		"prototype"
+		"FreshPrivilege()"
 	],
 	[
 		"Privilege",
-		"FreshPrivilege()"
+		"prototype"
 	],
 	[
 		"ProcessingInstruction"
@@ -29471,10 +31396,6 @@
 	],
 	[
 		"PublicKeyCredential",
-		"prototype"
-	],
-	[
-		"PublicKeyCredential",
 		"signalUnknownCredential()"
 	],
 	[
@@ -29504,6 +31425,10 @@
 	[
 		"PublicKeyCredential",
 		"getClientCapabilities()"
+	],
+	[
+		"PublicKeyCredential",
+		"prototype"
 	],
 	[
 		"PushEvent"
@@ -29537,11 +31462,11 @@
 	],
 	[
 		"PushManager",
-		"prototype"
+		"supportedContentEncodings"
 	],
 	[
 		"PushManager",
-		"supportedContentEncodings"
+		"prototype"
 	],
 	[
 		"PushMessageData"
@@ -29896,6 +31821,11 @@
 	[
 		"Range",
 		"prototype",
+		"toString()"
+	],
+	[
+		"Range",
+		"prototype",
 		"surroundContents()"
 	],
 	[
@@ -30035,10 +31965,6 @@
 	],
 	[
 		"Range",
-		"prototype"
-	],
-	[
-		"Range",
 		"START_TO_START"
 	],
 	[
@@ -30052,6 +31978,10 @@
 	[
 		"Range",
 		"END_TO_END"
+	],
+	[
+		"Range",
+		"prototype"
 	],
 	[
 		"ReadableByteStreamController"
@@ -30091,6 +32021,11 @@
 	[
 		"ReadableStream",
 		"prototype",
+		"values()"
+	],
+	[
+		"ReadableStream",
+		"prototype",
 		"tee()"
 	],
 	[
@@ -30111,7 +32046,22 @@
 	[
 		"ReadableStream",
 		"prototype",
+		"keys()"
+	],
+	[
+		"ReadableStream",
+		"prototype",
 		"getReader()"
+	],
+	[
+		"ReadableStream",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"ReadableStream",
+		"prototype",
+		"entries()"
 	],
 	[
 		"ReadableStream",
@@ -30120,11 +32070,11 @@
 	],
 	[
 		"ReadableStream",
-		"prototype"
+		"from()"
 	],
 	[
 		"ReadableStream",
-		"from()"
+		"prototype"
 	],
 	[
 		"ReadableStreamBYOBReader"
@@ -30656,10 +32606,6 @@
 	],
 	[
 		"Response",
-		"prototype"
-	],
-	[
-		"Response",
 		"redirect()"
 	],
 	[
@@ -30671,15 +32617,19 @@
 		"error()"
 	],
 	[
+		"Response",
+		"prototype"
+	],
+	[
 		"RestrictionTarget"
 	],
 	[
 		"RestrictionTarget",
-		"prototype"
+		"fromElement()"
 	],
 	[
 		"RestrictionTarget",
-		"fromElement()"
+		"prototype"
 	],
 	[
 		"RTCCertificate"
@@ -30696,15 +32646,15 @@
 	],
 	[
 		"RTCCertificate",
-		"prototype"
-	],
-	[
-		"RTCCertificate",
 		"getSupportedAlgorithms()"
 	],
 	[
 		"RTCCertificate",
 		"generateCertificate()"
+	],
+	[
+		"RTCCertificate",
+		"prototype"
 	],
 	[
 		"RTCDataChannel"
@@ -31296,11 +33246,11 @@
 	],
 	[
 		"RTCIceGatherer",
-		"prototype"
+		"getDefaultIceServers()"
 	],
 	[
 		"RTCIceGatherer",
-		"getDefaultIceServers()"
+		"prototype"
 	],
 	[
 		"RTCIceGathererEvent"
@@ -31833,11 +33783,11 @@
 	],
 	[
 		"RTCPeerConnection",
-		"prototype"
+		"generateCertificate()"
 	],
 	[
 		"RTCPeerConnection",
-		"generateCertificate()"
+		"prototype"
 	],
 	[
 		"RTCPeerConnectionIceErrorEvent"
@@ -32017,10 +33967,6 @@
 	],
 	[
 		"RTCRtpReceiver",
-		"prototype"
-	],
-	[
-		"RTCRtpReceiver",
 		"getCapabilities()"
 	],
 	[
@@ -32030,6 +33976,10 @@
 	[
 		"RTCRtpReceiver",
 		"disableHardwareDecoding()"
+	],
+	[
+		"RTCRtpReceiver",
+		"prototype"
 	],
 	[
 		"RTCRtpScriptTransform"
@@ -32175,10 +34125,6 @@
 	],
 	[
 		"RTCRtpSender",
-		"prototype"
-	],
-	[
-		"RTCRtpSender",
 		"getCapabilities()"
 	],
 	[
@@ -32188,6 +34134,10 @@
 	[
 		"RTCRtpSender",
 		"disableHardwareEncoding()"
+	],
+	[
+		"RTCRtpSender",
+		"prototype"
 	],
 	[
 		"RTCRtpTransceiver"
@@ -32343,11 +34293,11 @@
 	],
 	[
 		"RTCSctpTransport",
-		"prototype"
+		"getCapabilities()"
 	],
 	[
 		"RTCSctpTransport",
-		"getCapabilities()"
+		"prototype"
 	],
 	[
 		"RTCSessionDescription"
@@ -32397,6 +34347,76 @@
 	],
 	[
 		"RTCStatsReport"
+	],
+	[
+		"RTCStatsReport",
+		"prototype",
+		"values()"
+	],
+	[
+		"RTCStatsReport",
+		"prototype",
+		"values()"
+	],
+	[
+		"RTCStatsReport",
+		"prototype",
+		"size"
+	],
+	[
+		"RTCStatsReport",
+		"prototype",
+		"size"
+	],
+	[
+		"RTCStatsReport",
+		"prototype",
+		"keys()"
+	],
+	[
+		"RTCStatsReport",
+		"prototype",
+		"keys()"
+	],
+	[
+		"RTCStatsReport",
+		"prototype",
+		"has()"
+	],
+	[
+		"RTCStatsReport",
+		"prototype",
+		"has()"
+	],
+	[
+		"RTCStatsReport",
+		"prototype",
+		"get()"
+	],
+	[
+		"RTCStatsReport",
+		"prototype",
+		"get()"
+	],
+	[
+		"RTCStatsReport",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"RTCStatsReport",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"RTCStatsReport",
+		"prototype",
+		"entries()"
+	],
+	[
+		"RTCStatsReport",
+		"prototype",
+		"entries()"
 	],
 	[
 		"RTCStatsReport",
@@ -32789,6 +34809,11 @@
 	[
 		"Selection",
 		"prototype",
+		"toString()"
+	],
+	[
+		"Selection",
+		"prototype",
 		"setPosition()"
 	],
 	[
@@ -33150,6 +35175,13 @@
 		"prototype"
 	],
 	[
+		"ServiceWorkerGlobalScope"
+	],
+	[
+		"ServiceWorkerGlobalScope",
+		"prototype"
+	],
+	[
 		"ServiceWorkerRegistration"
 	],
 	[
@@ -33410,6 +35442,11 @@
 	[
 		"SharedStorage",
 		"prototype",
+		"values()"
+	],
+	[
+		"SharedStorage",
+		"prototype",
 		"set()"
 	],
 	[
@@ -33435,7 +35472,22 @@
 	[
 		"SharedStorage",
 		"prototype",
+		"keys()"
+	],
+	[
+		"SharedStorage",
+		"prototype",
 		"get()"
+	],
+	[
+		"SharedStorage",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"SharedStorage",
+		"prototype",
+		"entries()"
 	],
 	[
 		"SharedStorage",
@@ -33510,6 +35562,13 @@
 	],
 	[
 		"SharedWorker",
+		"prototype"
+	],
+	[
+		"SharedWorkerGlobalScope"
+	],
+	[
+		"SharedWorkerGlobalScope",
 		"prototype"
 	],
 	[
@@ -33731,6 +35790,11 @@
 		"SourceBufferList",
 		"prototype",
 		"length"
+	],
+	[
+		"SourceBufferList",
+		"prototype",
+		"()"
 	],
 	[
 		"SourceBufferList",
@@ -34461,7 +36525,17 @@
 	[
 		"StylePropertyMapReadOnly",
 		"prototype",
+		"values()"
+	],
+	[
+		"StylePropertyMapReadOnly",
+		"prototype",
 		"size"
+	],
+	[
+		"StylePropertyMapReadOnly",
+		"prototype",
+		"keys()"
 	],
 	[
 		"StylePropertyMapReadOnly",
@@ -34477,6 +36551,16 @@
 		"StylePropertyMapReadOnly",
 		"prototype",
 		"get()"
+	],
+	[
+		"StylePropertyMapReadOnly",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"StylePropertyMapReadOnly",
+		"prototype",
+		"entries()"
 	],
 	[
 		"StylePropertyMapReadOnly",
@@ -34829,10 +36913,6 @@
 	],
 	[
 		"SVGAngle",
-		"prototype"
-	],
-	[
-		"SVGAngle",
 		"SVG_ANGLETYPE_UNSPECIFIED"
 	],
 	[
@@ -34850,6 +36930,10 @@
 	[
 		"SVGAngle",
 		"SVG_ANGLETYPE_DEG"
+	],
+	[
+		"SVGAngle",
+		"prototype"
 	],
 	[
 		"SVGAnimatedAngle"
@@ -35257,10 +37341,6 @@
 	],
 	[
 		"SVGComponentTransferFunctionElement",
-		"prototype"
-	],
-	[
-		"SVGComponentTransferFunctionElement",
 		"SVG_FECOMPONENTTRANSFER_TYPE_UNKNOWN"
 	],
 	[
@@ -35282,6 +37362,10 @@
 	[
 		"SVGComponentTransferFunctionElement",
 		"SVG_FECOMPONENTTRANSFER_TYPE_DISCRETE"
+	],
+	[
+		"SVGComponentTransferFunctionElement",
+		"prototype"
 	],
 	[
 		"SVGDefsElement"
@@ -36048,10 +38132,6 @@
 	],
 	[
 		"SVGFEBlendElement",
-		"prototype"
-	],
-	[
-		"SVGFEBlendElement",
 		"SVG_FEBLEND_MODE_UNKNOWN"
 	],
 	[
@@ -36117,6 +38197,10 @@
 	[
 		"SVGFEBlendElement",
 		"SVG_FEBLEND_MODE_COLOR"
+	],
+	[
+		"SVGFEBlendElement",
+		"prototype"
 	],
 	[
 		"SVGFEColorMatrixElement"
@@ -36188,10 +38272,6 @@
 	],
 	[
 		"SVGFEColorMatrixElement",
-		"prototype"
-	],
-	[
-		"SVGFEColorMatrixElement",
 		"SVG_FECOLORMATRIX_TYPE_UNKNOWN"
 	],
 	[
@@ -36209,6 +38289,10 @@
 	[
 		"SVGFEColorMatrixElement",
 		"SVG_FECOLORMATRIX_TYPE_HUEROTATE"
+	],
+	[
+		"SVGFEColorMatrixElement",
+		"prototype"
 	],
 	[
 		"SVGFEComponentTransferElement"
@@ -36347,10 +38431,6 @@
 	],
 	[
 		"SVGFECompositeElement",
-		"prototype"
-	],
-	[
-		"SVGFECompositeElement",
 		"SVG_FECOMPOSITE_OPERATOR_XOR"
 	],
 	[
@@ -36376,6 +38456,10 @@
 	[
 		"SVGFECompositeElement",
 		"SVG_FECOMPOSITE_OPERATOR_ARITHMETIC"
+	],
+	[
+		"SVGFECompositeElement",
+		"prototype"
 	],
 	[
 		"SVGFEConvolveMatrixElement"
@@ -36487,10 +38571,6 @@
 	],
 	[
 		"SVGFEConvolveMatrixElement",
-		"prototype"
-	],
-	[
-		"SVGFEConvolveMatrixElement",
 		"SVG_EDGEMODE_WRAP"
 	],
 	[
@@ -36504,6 +38584,10 @@
 	[
 		"SVGFEConvolveMatrixElement",
 		"SVG_EDGEMODE_DUPLICATE"
+	],
+	[
+		"SVGFEConvolveMatrixElement",
+		"prototype"
 	],
 	[
 		"SVGFEDiffuseLightingElement"
@@ -36642,10 +38726,6 @@
 	],
 	[
 		"SVGFEDisplacementMapElement",
-		"prototype"
-	],
-	[
-		"SVGFEDisplacementMapElement",
 		"SVG_CHANNEL_UNKNOWN"
 	],
 	[
@@ -36663,6 +38743,10 @@
 	[
 		"SVGFEDisplacementMapElement",
 		"SVG_CHANNEL_A"
+	],
+	[
+		"SVGFEDisplacementMapElement",
+		"prototype"
 	],
 	[
 		"SVGFEDistantLightElement"
@@ -36878,10 +38962,6 @@
 	],
 	[
 		"SVGFEGaussianBlurElement",
-		"prototype"
-	],
-	[
-		"SVGFEGaussianBlurElement",
 		"SVG_EDGEMODE_WRAP"
 	],
 	[
@@ -36895,6 +38975,10 @@
 	[
 		"SVGFEGaussianBlurElement",
 		"SVG_EDGEMODE_DUPLICATE"
+	],
+	[
+		"SVGFEGaussianBlurElement",
+		"prototype"
 	],
 	[
 		"SVGFEImageElement"
@@ -37052,10 +39136,6 @@
 	],
 	[
 		"SVGFEMorphologyElement",
-		"prototype"
-	],
-	[
-		"SVGFEMorphologyElement",
 		"SVG_MORPHOLOGY_OPERATOR_UNKNOWN"
 	],
 	[
@@ -37065,6 +39145,10 @@
 	[
 		"SVGFEMorphologyElement",
 		"SVG_MORPHOLOGY_OPERATOR_DILATE"
+	],
+	[
+		"SVGFEMorphologyElement",
+		"prototype"
 	],
 	[
 		"SVGFEOffsetElement"
@@ -37371,10 +39455,6 @@
 	],
 	[
 		"SVGFETurbulenceElement",
-		"prototype"
-	],
-	[
-		"SVGFETurbulenceElement",
 		"SVG_TURBULENCE_TYPE_UNKNOWN"
 	],
 	[
@@ -37396,6 +39476,10 @@
 	[
 		"SVGFETurbulenceElement",
 		"SVG_STITCHTYPE_NOSTITCH"
+	],
+	[
+		"SVGFETurbulenceElement",
+		"prototype"
 	],
 	[
 		"SVGFilterElement"
@@ -37550,10 +39634,6 @@
 	],
 	[
 		"SVGGradientElement",
-		"prototype"
-	],
-	[
-		"SVGGradientElement",
 		"SVG_SPREADMETHOD_UNKNOWN"
 	],
 	[
@@ -37567,6 +39647,10 @@
 	[
 		"SVGGradientElement",
 		"SVG_SPREADMETHOD_PAD"
+	],
+	[
+		"SVGGradientElement",
+		"prototype"
 	],
 	[
 		"SVGGraphicsElement"
@@ -37737,10 +39821,6 @@
 	],
 	[
 		"SVGLength",
-		"prototype"
-	],
-	[
-		"SVGLength",
 		"SVG_LENGTHTYPE_UNKNOWN"
 	],
 	[
@@ -37782,6 +39862,10 @@
 	[
 		"SVGLength",
 		"SVG_LENGTHTYPE_CM"
+	],
+	[
+		"SVGLength",
+		"prototype"
 	],
 	[
 		"SVGLengthList"
@@ -37830,6 +39914,11 @@
 		"SVGLengthList",
 		"prototype",
 		"appendItem()"
+	],
+	[
+		"SVGLengthList",
+		"prototype",
+		"()"
 	],
 	[
 		"SVGLengthList",
@@ -37984,10 +40073,6 @@
 	],
 	[
 		"SVGMarkerElement",
-		"prototype"
-	],
-	[
-		"SVGMarkerElement",
 		"SVG_MARKER_ORIENT_UNKNOWN"
 	],
 	[
@@ -38009,6 +40094,10 @@
 	[
 		"SVGMarkerElement",
 		"SVG_MARKERUNITS_STROKEWIDTH"
+	],
+	[
+		"SVGMarkerElement",
+		"prototype"
 	],
 	[
 		"SVGMaskElement"
@@ -38128,6 +40217,11 @@
 	],
 	[
 		"SVGNumberList",
+		"prototype",
+		"()"
+	],
+	[
+		"SVGNumberList",
 		"prototype"
 	],
 	[
@@ -38241,6 +40335,11 @@
 		"SVGPointList",
 		"prototype",
 		"appendItem()"
+	],
+	[
+		"SVGPointList",
+		"prototype",
+		"()"
 	],
 	[
 		"SVGPointList",
@@ -38365,10 +40464,6 @@
 	],
 	[
 		"SVGPreserveAspectRatio",
-		"prototype"
-	],
-	[
-		"SVGPreserveAspectRatio",
 		"SVG_PRESERVEASPECTRATIO_XMINYMIN"
 	],
 	[
@@ -38422,6 +40517,10 @@
 	[
 		"SVGPreserveAspectRatio",
 		"SVG_MEETORSLICE_MEET"
+	],
+	[
+		"SVGPreserveAspectRatio",
+		"prototype"
 	],
 	[
 		"SVGRadialGradientElement"
@@ -38585,6 +40684,11 @@
 		"SVGStringList",
 		"prototype",
 		"appendItem()"
+	],
+	[
+		"SVGStringList",
+		"prototype",
+		"()"
 	],
 	[
 		"SVGStringList",
@@ -38983,10 +41087,6 @@
 	],
 	[
 		"SVGTextContentElement",
-		"prototype"
-	],
-	[
-		"SVGTextContentElement",
 		"LENGTHADJUST_UNKNOWN"
 	],
 	[
@@ -38996,6 +41096,10 @@
 	[
 		"SVGTextContentElement",
 		"LENGTHADJUST_SPACING"
+	],
+	[
+		"SVGTextContentElement",
+		"prototype"
 	],
 	[
 		"SVGTextElement"
@@ -39059,10 +41163,6 @@
 	],
 	[
 		"SVGTextPathElement",
-		"prototype"
-	],
-	[
-		"SVGTextPathElement",
 		"TEXTPATH_SPACINGTYPE_UNKNOWN"
 	],
 	[
@@ -39084,6 +41184,10 @@
 	[
 		"SVGTextPathElement",
 		"TEXTPATH_METHODTYPE_ALIGN"
+	],
+	[
+		"SVGTextPathElement",
+		"prototype"
 	],
 	[
 		"SVGTextPositioningElement"
@@ -39209,10 +41313,6 @@
 	],
 	[
 		"SVGTransform",
-		"prototype"
-	],
-	[
-		"SVGTransform",
 		"SVG_TRANSFORM_UNKNOWN"
 	],
 	[
@@ -39238,6 +41338,10 @@
 	[
 		"SVGTransform",
 		"SVG_TRANSFORM_MATRIX"
+	],
+	[
+		"SVGTransform",
+		"prototype"
 	],
 	[
 		"SVGTransformList"
@@ -39299,6 +41403,11 @@
 	],
 	[
 		"SVGTransformList",
+		"prototype",
+		"()"
+	],
+	[
+		"SVGTransformList",
 		"prototype"
 	],
 	[
@@ -39328,10 +41437,6 @@
 	],
 	[
 		"SVGUnitTypes",
-		"prototype"
-	],
-	[
-		"SVGUnitTypes",
 		"SVG_UNIT_TYPE_USERSPACEONUSE"
 	],
 	[
@@ -39341,6 +41446,10 @@
 	[
 		"SVGUnitTypes",
 		"SVG_UNIT_TYPE_OBJECTBOUNDINGBOX"
+	],
+	[
+		"SVGUnitTypes",
+		"prototype"
 	],
 	[
 		"SVGUseElement"
@@ -39560,11 +41669,11 @@
 	],
 	[
 		"TaskSignal",
-		"prototype"
+		"any()"
 	],
 	[
 		"TaskSignal",
-		"any()"
+		"prototype"
 	],
 	[
 		"TestUtils"
@@ -39977,6 +42086,11 @@
 	],
 	[
 		"TextTrackCueList",
+		"prototype",
+		"()"
+	],
+	[
+		"TextTrackCueList",
 		"prototype"
 	],
 	[
@@ -40006,6 +42120,11 @@
 		"TextTrackList",
 		"prototype",
 		"getTrackById()"
+	],
+	[
+		"TextTrackList",
+		"prototype",
+		"()"
 	],
 	[
 		"TextTrackList",
@@ -40396,6 +42515,11 @@
 	[
 		"TrustedHTML",
 		"prototype",
+		"toString()"
+	],
+	[
+		"TrustedHTML",
+		"prototype",
 		"toJSON()"
 	],
 	[
@@ -40408,6 +42532,11 @@
 	[
 		"TrustedScript",
 		"prototype",
+		"toString()"
+	],
+	[
+		"TrustedScript",
+		"prototype",
 		"toJSON()"
 	],
 	[
@@ -40416,6 +42545,11 @@
 	],
 	[
 		"TrustedScriptURL"
+	],
+	[
+		"TrustedScriptURL",
+		"prototype",
+		"toString()"
 	],
 	[
 		"TrustedScriptURL",
@@ -40644,10 +42778,6 @@
 	],
 	[
 		"URL",
-		"prototype"
-	],
-	[
-		"URL",
 		"revokeObjectURL()"
 	],
 	[
@@ -40661,6 +42791,98 @@
 	[
 		"URL",
 		"canParse()"
+	],
+	[
+		"URL",
+		"prototype"
+	],
+	[
+		"webkitURL"
+	],
+	[
+		"webkitURL",
+		"prototype",
+		"username"
+	],
+	[
+		"webkitURL",
+		"prototype",
+		"toJSON()"
+	],
+	[
+		"webkitURL",
+		"prototype",
+		"searchParams"
+	],
+	[
+		"webkitURL",
+		"prototype",
+		"search"
+	],
+	[
+		"webkitURL",
+		"prototype",
+		"protocol"
+	],
+	[
+		"webkitURL",
+		"prototype",
+		"port"
+	],
+	[
+		"webkitURL",
+		"prototype",
+		"pathname"
+	],
+	[
+		"webkitURL",
+		"prototype",
+		"password"
+	],
+	[
+		"webkitURL",
+		"prototype",
+		"origin"
+	],
+	[
+		"webkitURL",
+		"prototype",
+		"href"
+	],
+	[
+		"webkitURL",
+		"prototype",
+		"hostname"
+	],
+	[
+		"webkitURL",
+		"prototype",
+		"host"
+	],
+	[
+		"webkitURL",
+		"prototype",
+		"hash"
+	],
+	[
+		"webkitURL",
+		"revokeObjectURL()"
+	],
+	[
+		"webkitURL",
+		"parse()"
+	],
+	[
+		"webkitURL",
+		"createObjectURL()"
+	],
+	[
+		"webkitURL",
+		"canParse()"
+	],
+	[
+		"webkitURL",
+		"prototype"
 	],
 	[
 		"URLPattern"
@@ -40730,6 +42952,16 @@
 	[
 		"URLSearchParams",
 		"prototype",
+		"values()"
+	],
+	[
+		"URLSearchParams",
+		"prototype",
+		"toString()"
+	],
+	[
+		"URLSearchParams",
+		"prototype",
 		"sort()"
 	],
 	[
@@ -40745,6 +42977,11 @@
 	[
 		"URLSearchParams",
 		"prototype",
+		"keys()"
+	],
+	[
+		"URLSearchParams",
+		"prototype",
 		"has()"
 	],
 	[
@@ -40756,6 +42993,16 @@
 		"URLSearchParams",
 		"prototype",
 		"get()"
+	],
+	[
+		"URLSearchParams",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"URLSearchParams",
+		"prototype",
+		"entries()"
 	],
 	[
 		"URLSearchParams",
@@ -41367,11 +43614,11 @@
 	],
 	[
 		"VideoDecoder",
-		"prototype"
+		"isConfigSupported()"
 	],
 	[
 		"VideoDecoder",
-		"isConfigSupported()"
+		"prototype"
 	],
 	[
 		"VideoEncoder"
@@ -41418,11 +43665,11 @@
 	],
 	[
 		"VideoEncoder",
-		"prototype"
+		"isConfigSupported()"
 	],
 	[
 		"VideoEncoder",
-		"isConfigSupported()"
+		"prototype"
 	],
 	[
 		"VideoFrame"
@@ -41627,6 +43874,11 @@
 	],
 	[
 		"VideoTrackList",
+		"prototype",
+		"()"
+	],
+	[
+		"VideoTrackList",
 		"prototype"
 	],
 	[
@@ -41697,6 +43949,51 @@
 	],
 	[
 		"ViewTransitionTypeSet"
+	],
+	[
+		"ViewTransitionTypeSet",
+		"prototype",
+		"values()"
+	],
+	[
+		"ViewTransitionTypeSet",
+		"prototype",
+		"size"
+	],
+	[
+		"ViewTransitionTypeSet",
+		"prototype",
+		"keys()"
+	],
+	[
+		"ViewTransitionTypeSet",
+		"prototype",
+		"has()"
+	],
+	[
+		"ViewTransitionTypeSet",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"ViewTransitionTypeSet",
+		"prototype",
+		"entries()"
+	],
+	[
+		"ViewTransitionTypeSet",
+		"prototype",
+		"delete()"
+	],
+	[
+		"ViewTransitionTypeSet",
+		"prototype",
+		"clear()"
+	],
+	[
+		"ViewTransitionTypeSet",
+		"prototype",
+		"add()"
 	],
 	[
 		"ViewTransitionTypeSet",
@@ -45966,10 +48263,6 @@
 	],
 	[
 		"WebGL2RenderingContext",
-		"prototype"
-	],
-	[
-		"WebGL2RenderingContext",
 		"ZERO"
 	],
 	[
@@ -48205,6 +50498,10 @@
 		"ACTIVE_ATTRIBUTES"
 	],
 	[
+		"WebGL2RenderingContext",
+		"prototype"
+	],
+	[
 		"WEBGL_blend_equation_advanced_coherent"
 	],
 	[
@@ -48284,10 +50581,6 @@
 	],
 	[
 		"WEBGL_blend_equation_advanced_coherent",
-		"prototype"
-	],
-	[
-		"WEBGL_blend_equation_advanced_coherent",
 		"SOFTLIGHT"
 	],
 	[
@@ -48345,6 +50638,10 @@
 	[
 		"WEBGL_blend_equation_advanced_coherent",
 		"COLORBURN"
+	],
+	[
+		"WEBGL_blend_equation_advanced_coherent",
+		"prototype"
 	],
 	[
 		"WEBGL_clip_cull_distance"
@@ -48406,10 +50703,6 @@
 	],
 	[
 		"WEBGL_clip_cull_distance",
-		"prototype"
-	],
-	[
-		"WEBGL_clip_cull_distance",
 		"MAX_CULL_DISTANCES_WEBGL"
 	],
 	[
@@ -48453,6 +50746,10 @@
 		"CLIP_DISTANCE0_WEBGL"
 	],
 	[
+		"WEBGL_clip_cull_distance",
+		"prototype"
+	],
+	[
 		"WEBGL_color_buffer_float"
 	],
 	[
@@ -48472,10 +50769,6 @@
 	],
 	[
 		"WEBGL_color_buffer_float",
-		"prototype"
-	],
-	[
-		"WEBGL_color_buffer_float",
 		"UNSIGNED_NORMALIZED_EXT"
 	],
 	[
@@ -48485,6 +50778,10 @@
 	[
 		"WEBGL_color_buffer_float",
 		"FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT"
+	],
+	[
+		"WEBGL_color_buffer_float",
+		"prototype"
 	],
 	[
 		"WEBGL_compressed_texture_astc"
@@ -48636,10 +50933,6 @@
 	],
 	[
 		"WEBGL_compressed_texture_astc",
-		"prototype"
-	],
-	[
-		"WEBGL_compressed_texture_astc",
 		"COMPRESSED_SRGB8_ALPHA8_ASTC_8x8_KHR"
 	],
 	[
@@ -48751,6 +51044,10 @@
 		"COMPRESSED_RGBA_ASTC_10x10_KHR"
 	],
 	[
+		"WEBGL_compressed_texture_astc",
+		"prototype"
+	],
+	[
 		"WEBGL_compressed_texture_etc"
 	],
 	[
@@ -48805,10 +51102,6 @@
 	],
 	[
 		"WEBGL_compressed_texture_etc",
-		"prototype"
-	],
-	[
-		"WEBGL_compressed_texture_etc",
 		"COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2"
 	],
 	[
@@ -48848,6 +51141,10 @@
 		"COMPRESSED_R11_EAC"
 	],
 	[
+		"WEBGL_compressed_texture_etc",
+		"prototype"
+	],
+	[
 		"WEBGL_compressed_texture_etc1"
 	],
 	[
@@ -48857,11 +51154,11 @@
 	],
 	[
 		"WEBGL_compressed_texture_etc1",
-		"prototype"
+		"COMPRESSED_RGB_ETC1_WEBGL"
 	],
 	[
 		"WEBGL_compressed_texture_etc1",
-		"COMPRESSED_RGB_ETC1_WEBGL"
+		"prototype"
 	],
 	[
 		"WEBGL_compressed_texture_pvrtc"
@@ -48888,10 +51185,6 @@
 	],
 	[
 		"WEBGL_compressed_texture_pvrtc",
-		"prototype"
-	],
-	[
-		"WEBGL_compressed_texture_pvrtc",
 		"COMPRESSED_RGB_PVRTC_4BPPV1_IMG"
 	],
 	[
@@ -48905,6 +51198,10 @@
 	[
 		"WEBGL_compressed_texture_pvrtc",
 		"COMPRESSED_RGBA_PVRTC_2BPPV1_IMG"
+	],
+	[
+		"WEBGL_compressed_texture_pvrtc",
+		"prototype"
 	],
 	[
 		"WEBGL_compressed_texture_s3tc"
@@ -48931,10 +51228,6 @@
 	],
 	[
 		"WEBGL_compressed_texture_s3tc",
-		"prototype"
-	],
-	[
-		"WEBGL_compressed_texture_s3tc",
 		"COMPRESSED_RGB_S3TC_DXT1_EXT"
 	],
 	[
@@ -48948,6 +51241,10 @@
 	[
 		"WEBGL_compressed_texture_s3tc",
 		"COMPRESSED_RGBA_S3TC_DXT1_EXT"
+	],
+	[
+		"WEBGL_compressed_texture_s3tc",
+		"prototype"
 	],
 	[
 		"WEBGL_compressed_texture_s3tc_srgb"
@@ -48974,10 +51271,6 @@
 	],
 	[
 		"WEBGL_compressed_texture_s3tc_srgb",
-		"prototype"
-	],
-	[
-		"WEBGL_compressed_texture_s3tc_srgb",
 		"COMPRESSED_SRGB_S3TC_DXT1_EXT"
 	],
 	[
@@ -48991,6 +51284,10 @@
 	[
 		"WEBGL_compressed_texture_s3tc_srgb",
 		"COMPRESSED_SRGB_ALPHA_S3TC_DXT1_EXT"
+	],
+	[
+		"WEBGL_compressed_texture_s3tc_srgb",
+		"prototype"
 	],
 	[
 		"WEBGL_debug_renderer_info"
@@ -49007,15 +51304,15 @@
 	],
 	[
 		"WEBGL_debug_renderer_info",
-		"prototype"
-	],
-	[
-		"WEBGL_debug_renderer_info",
 		"UNMASKED_VENDOR_WEBGL"
 	],
 	[
 		"WEBGL_debug_renderer_info",
 		"UNMASKED_RENDERER_WEBGL"
+	],
+	[
+		"WEBGL_debug_renderer_info",
+		"prototype"
 	],
 	[
 		"WEBGL_debug_shaders"
@@ -49039,11 +51336,11 @@
 	],
 	[
 		"WEBGL_depth_texture",
-		"prototype"
+		"UNSIGNED_INT_24_8_WEBGL"
 	],
 	[
 		"WEBGL_depth_texture",
-		"UNSIGNED_INT_24_8_WEBGL"
+		"prototype"
 	],
 	[
 		"WEBGL_draw_buffers"
@@ -49225,10 +51522,6 @@
 	],
 	[
 		"WEBGL_draw_buffers",
-		"prototype"
-	],
-	[
-		"WEBGL_draw_buffers",
 		"MAX_DRAW_BUFFERS_WEBGL"
 	],
 	[
@@ -49364,6 +51657,10 @@
 		"COLOR_ATTACHMENT0_WEBGL"
 	],
 	[
+		"WEBGL_draw_buffers",
+		"prototype"
+	],
+	[
 		"WEBGL_draw_instanced_base_vertex_base_instance"
 	],
 	[
@@ -49466,10 +51763,6 @@
 	],
 	[
 		"WEBGL_provoking_vertex",
-		"prototype"
-	],
-	[
-		"WEBGL_provoking_vertex",
 		"PROVOKING_VERTEX_WEBGL"
 	],
 	[
@@ -49479,6 +51772,10 @@
 	[
 		"WEBGL_provoking_vertex",
 		"FIRST_VERTEX_CONVENTION_WEBGL"
+	],
+	[
+		"WEBGL_provoking_vertex",
+		"prototype"
 	],
 	[
 		"WebGLActiveInfo"
@@ -51771,10 +54068,6 @@
 	],
 	[
 		"WebGLRenderingContext",
-		"prototype"
-	],
-	[
-		"WebGLRenderingContext",
 		"ZERO"
 	],
 	[
@@ -52962,6 +55255,10 @@
 		"ACTIVE_ATTRIBUTES"
 	],
 	[
+		"WebGLRenderingContext",
+		"prototype"
+	],
+	[
 		"WebGLSampler"
 	],
 	[
@@ -53131,10 +55428,6 @@
 	],
 	[
 		"WebSocket",
-		"prototype"
-	],
-	[
-		"WebSocket",
 		"OPEN"
 	],
 	[
@@ -53148,6 +55441,10 @@
 	[
 		"WebSocket",
 		"CLOSED"
+	],
+	[
+		"WebSocket",
+		"prototype"
 	],
 	[
 		"WebTransport"
@@ -53229,11 +55526,11 @@
 	],
 	[
 		"WebTransport",
-		"prototype"
+		"supportsReliableOnly"
 	],
 	[
 		"WebTransport",
-		"supportsReliableOnly"
+		"prototype"
 	],
 	[
 		"WebTransportBidirectionalStream"
@@ -53379,6 +55676,36 @@
 	],
 	[
 		"WGSLLanguageFeatures",
+		"prototype",
+		"values()"
+	],
+	[
+		"WGSLLanguageFeatures",
+		"prototype",
+		"size"
+	],
+	[
+		"WGSLLanguageFeatures",
+		"prototype",
+		"keys()"
+	],
+	[
+		"WGSLLanguageFeatures",
+		"prototype",
+		"has()"
+	],
+	[
+		"WGSLLanguageFeatures",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"WGSLLanguageFeatures",
+		"prototype",
+		"entries()"
+	],
+	[
+		"WGSLLanguageFeatures",
 		"prototype"
 	],
 	[
@@ -53421,10 +55748,6 @@
 	],
 	[
 		"WheelEvent",
-		"prototype"
-	],
-	[
-		"WheelEvent",
 		"DOM_DELTA_PIXEL"
 	],
 	[
@@ -53434,6 +55757,17 @@
 	[
 		"WheelEvent",
 		"DOM_DELTA_LINE"
+	],
+	[
+		"WheelEvent",
+		"prototype"
+	],
+	[
+		"Window"
+	],
+	[
+		"Window",
+		"prototype"
 	],
 	[
 		"WindowClient"
@@ -53536,6 +55870,13 @@
 	],
 	[
 		"Worker",
+		"prototype"
+	],
+	[
+		"WorkerGlobalScope"
+	],
+	[
+		"WorkerGlobalScope",
 		"prototype"
 	],
 	[
@@ -54050,10 +56391,6 @@
 	],
 	[
 		"XMLHttpRequest",
-		"prototype"
-	],
-	[
-		"XMLHttpRequest",
 		"UNSENT"
 	],
 	[
@@ -54071,6 +56408,10 @@
 	[
 		"XMLHttpRequest",
 		"DONE"
+	],
+	[
+		"XMLHttpRequest",
+		"prototype"
 	],
 	[
 		"XMLHttpRequestEventTarget"
@@ -54165,6 +56506,13 @@
 	],
 	[
 		"XPathExpression",
+		"prototype"
+	],
+	[
+		"XPathNSResolver"
+	],
+	[
+		"XPathNSResolver",
 		"prototype"
 	],
 	[
@@ -54267,10 +56615,6 @@
 	],
 	[
 		"XPathResult",
-		"prototype"
-	],
-	[
-		"XPathResult",
 		"UNORDERED_NODE_SNAPSHOT_TYPE"
 	],
 	[
@@ -54310,6 +56654,10 @@
 		"ANY_TYPE"
 	],
 	[
+		"XPathResult",
+		"prototype"
+	],
+	[
 		"XRAnchor"
 	],
 	[
@@ -54333,6 +56681,36 @@
 	],
 	[
 		"XRAnchorSet"
+	],
+	[
+		"XRAnchorSet",
+		"prototype",
+		"values()"
+	],
+	[
+		"XRAnchorSet",
+		"prototype",
+		"size"
+	],
+	[
+		"XRAnchorSet",
+		"prototype",
+		"keys()"
+	],
+	[
+		"XRAnchorSet",
+		"prototype",
+		"has()"
+	],
+	[
+		"XRAnchorSet",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"XRAnchorSet",
+		"prototype",
+		"entries()"
 	],
 	[
 		"XRAnchorSet",
@@ -54652,12 +57030,32 @@
 	[
 		"XRHand",
 		"prototype",
+		"values()"
+	],
+	[
+		"XRHand",
+		"prototype",
 		"size"
 	],
 	[
 		"XRHand",
 		"prototype",
+		"keys()"
+	],
+	[
+		"XRHand",
+		"prototype",
 		"get()"
+	],
+	[
+		"XRHand",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"XRHand",
+		"prototype",
+		"entries()"
 	],
 	[
 		"XRHand",
@@ -54772,7 +57170,32 @@
 	[
 		"XRInputSourceArray",
 		"prototype",
+		"values()"
+	],
+	[
+		"XRInputSourceArray",
+		"prototype",
 		"length"
+	],
+	[
+		"XRInputSourceArray",
+		"prototype",
+		"keys()"
+	],
+	[
+		"XRInputSourceArray",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"XRInputSourceArray",
+		"prototype",
+		"entries()"
+	],
+	[
+		"XRInputSourceArray",
+		"prototype",
+		"()"
 	],
 	[
 		"XRInputSourceArray",
@@ -54958,6 +57381,36 @@
 	],
 	[
 		"XRMeshSet",
+		"prototype",
+		"values()"
+	],
+	[
+		"XRMeshSet",
+		"prototype",
+		"size"
+	],
+	[
+		"XRMeshSet",
+		"prototype",
+		"keys()"
+	],
+	[
+		"XRMeshSet",
+		"prototype",
+		"has()"
+	],
+	[
+		"XRMeshSet",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"XRMeshSet",
+		"prototype",
+		"entries()"
+	],
+	[
+		"XRMeshSet",
 		"prototype"
 	],
 	[
@@ -55006,6 +57459,36 @@
 	],
 	[
 		"XRPlaneSet"
+	],
+	[
+		"XRPlaneSet",
+		"prototype",
+		"values()"
+	],
+	[
+		"XRPlaneSet",
+		"prototype",
+		"size"
+	],
+	[
+		"XRPlaneSet",
+		"prototype",
+		"keys()"
+	],
+	[
+		"XRPlaneSet",
+		"prototype",
+		"has()"
+	],
+	[
+		"XRPlaneSet",
+		"prototype",
+		"forEach()"
+	],
+	[
+		"XRPlaneSet",
+		"prototype",
+		"entries()"
 	],
 	[
 		"XRPlaneSet",
@@ -55706,11 +58189,11 @@
 	],
 	[
 		"XRWebGLLayer",
-		"prototype"
+		"getNativeFramebufferScaleFactor()"
 	],
 	[
 		"XRWebGLLayer",
-		"getNativeFramebufferScaleFactor()"
+		"prototype"
 	],
 	[
 		"XRWebGLSubImage"
@@ -55815,6 +58298,9 @@
 	[
 		"XSLTProcessor",
 		"prototype"
+	],
+	[
+		"()"
 	],
 	[
 		"alert()"

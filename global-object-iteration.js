@@ -90,6 +90,8 @@ const recursiveAdd = (/** @type {any} */ object, /** @type {any} */ path = [], e
 	return list;
 };
 
+const numberOfMembersInFunctionPrototype = Reflect.ownKeys(parseInt).length;
+
 const getList = async ({ excludeStandardized = false } = {}) => {
 	let /** @type {string[]} */ list = [];
 	for (let name of sort(Object.getOwnPropertyNames(globalThis))) {
@@ -102,7 +104,7 @@ const getList = async ({ excludeStandardized = false } = {}) => {
 
 		// let stringified = pathToString([key]);
 		if (typeof item === "function") {
-			if (item?.prototype) {
+			if (Reflect.ownKeys(item).length > numberOfMembersInFunctionPrototype) {
 				// if (inSpecifications.has(key)) continue;
 				// console.log(key);
 				// let temp = item?.prototype

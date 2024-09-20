@@ -60,4 +60,5 @@ isFinite
 isNaN
 parseFloat
 parseInt
+undefined
 unescape

@@ -1,9 +1,17 @@
 
+/* 
+node --experimental-strip-types ./from-webindex.ts
+*/
+
 import * as FS from "node:fs/promises";
 
-const { jsInterfaces, jsMixins, jsAttributes, jsFunctions } = await (await fetch("https://benjaminaster.com/webindex/index/javascript.json")).json();
+const { jsInterfaces, jsMixins, jsAttributes, jsFunctions, jsInterfaceAliases } = await (await fetch("http://localhost/webindex/index/javascript.json")).json();
+// const { jsInterfaces, jsMixins, jsAttributes, jsFunctions } = await (await fetch("https://benjaminaster.com/webindex/index/javascript.json")).json();
 
-const map = /** @type {Map<string, any>} */ (new Map());
+const map = new Map<string, any>();
+const interfaceAliasesMap = jsInterfaceAliases.reduce((map, item) => map.set(item.name, item.aliases), new Map<string, string[]>());
+
+// console.log([...interfaceAliasesMap]);
 
 for (const interfaceOrMixin of [...jsInterfaces, ...jsMixins]) {
 	map.set(interfaceOrMixin.name, {
@@ -49,11 +57,13 @@ for (const interfaceInfo of jsInterfaces) {
 	}
 	prototypeMembers?.sort();
 	staticMembers?.sort();
-	list.push({
-		name: interfaceInfo.name,
-		...(prototypeMembers ? { prototype: prototypeMembers } : {}),
-		static: staticMembers,
-	});
+	for (const name of [interfaceInfo.name, ...(interfaceAliasesMap.get(interfaceInfo.name) ?? [])]) {
+		list.push({
+			name,
+			...(prototypeMembers ? { prototype: prototypeMembers } : {}),
+			static: staticMembers,
+		});
+	}
 }
 
 // await FS.writeFile("./a.json", JSON.stringify(list, null, "\t"));
@@ -71,26 +81,26 @@ const globalScopeNames = new Set([
 let globalScopeStringArray = [];
 
 for (const item of list) {
+	stringArray.push([item.name]);
 	const isGlobalScopeItem = globalScopeNames.has(item.name);
+	let itemList = [];
+	if (item.prototype) {
+		itemList.push([item.name, "prototype"]);
+	}
+	for (const staticItem of item.static) {
+		itemList.push([item.name, staticItem]);
+	}
 	if (isGlobalScopeItem) {
 		for (const prototypeItem of item.prototype) {
 			globalScopeStringArray.push([prototypeItem]);
 		}
-	} else {
-		stringArray.push([item.name]);
-		let itemList = [];
-		for (const staticItem of item.static) {
-			itemList.push([item.name, staticItem]);
+	} else if (item.prototype) {
+		for (const prototypeItem of item.prototype) {
+			itemList.push([item.name, "prototype", prototypeItem]);
 		}
-		if (item.prototype) {
-			itemList.push([item.name, "prototype"]);
-			for (const prototypeItem of item.prototype) {
-				itemList.push([item.name, "prototype", prototypeItem]);
-			}
-		}
-		itemList.sort(([a], [b]) => a > b ? 1 : -1);
-		stringArray.push(...itemList);
 	}
+	itemList.sort(([a], [b]) => a > b ? 1 : -1);
+	stringArray.push(...itemList);
 }
 
 globalScopeStringArray.sort(([a], [b]) => a > b ? 1 : -1);
